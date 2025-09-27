@@ -94,6 +94,9 @@ custom_css = ["/css/custom.css"]
   url = "/about/"
   weight = 11
 
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
 
 
 
