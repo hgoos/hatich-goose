@@ -1,6 +1,6 @@
 +++
 date = '2025-09-18'
-draft = true
+draft = false
 title = 'American Sentences'
 tags = ["american sentences"]
 featured_image = 'images/writing/poetry/AmSent/firstStps.jpg'
