@@ -1,0 +1,15 @@
+this-fluttering-ember:
+  description: "I’ve been trying to write sonnets since I first started reading them. Mostly English Sonnets. As it turns out, I suck at English Sonnets. Granted, Shakespeare and the others had hundreds and hundreds of hours on me by the time I picked up the form, but something just felt… unnatural about English Sonnets. In Andrew Feld’s ENG 283 we had to invent our own form of poetry. I didn’t invent the Kerisian Sonnet there, but after. I created a sonnet that fits my internal rhythm for a character who is a poet. Keris. A Kerisian Sonnet is as follows: 3 stanzas of 4 lines with a couplet at the end. The 4 lines alternate iambic tetrameter and iambic trimeter, respectively. The 4 lines form an ABCB rhyme scheme. The couplet is a fourteener (iambic heptameter). Even though it's my own form I have a long way to go before I get it down. I mostly created it cause I’m lazy and wanted to make form poetry easier for myself."
+  featured_image: "/images/heroim/angel-wings.png"
+  cover_dimming_class: "bg-transparent"
+
+the-dreams-of-pontius-pilate:
+  description: "What dreams did Pontius Pilate have as he looked o'er Jerusalem?"
+
+faith--religion:
+  description: "What do you call a recovering Protestant?"
+
+kersian-sonnets:
+  description:
+  featured_image: "/images/heroim/alisLakeMiddle.jpg"
+  featured_image_class: "contain"

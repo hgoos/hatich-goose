@@ -1,0 +1,62 @@
+{{ define "main" }}
+  {{ $tagName := .Title }}
+  {{ $tagKey := urlize $tagName }}
+  {{ $tagData := index .Site.Data.tags $tagKey }}
+  <!-- Debug Section-->
+  <!--<div style="background: red; color: white; padding: 10px;">DEBUG: Custom template loaded!</div>
+  <div style="background: yellow; padding: 10px; margin: 10px;">
+  <p>Tag Key: {{ $tagKey }}</p>
+  <p>Tag Data: {{ $tagData }}</p>
+  <p>Hero Image: {{ $tagData.hero_image }}</p>
+</div>
+  <!-Hero Section -->
+  {{ if $tagData.featured_image }}
+   <div class="tag-hero" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('{{ $tagData.featured_image }}'); background-size: cover; background-position: center; min-height: 400px; display: flex; align-items: center; justify-content: center; color: white; text-align: center;">
+      <div class="hero-content">
+        <h1 class="tag-title" style="font-size: 3rem; margin-bottom: 1rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.7);">{{ $tagName }}</h1>
+        {{ if $tagData.description }}
+          <p class="tag-description" style="font-size: 1.2rem; max-width: 600px; margin: 0 auto; text-shadow: 1px 1px 2px rgba(0,0,0,0.7);">{{ $tagData.description }}</p>
+        {{ end }}
+        <div class="post-count" style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.9;">
+          {{ len .Pages }} {{ if eq (len .Pages) 1 }}post{{ else }}posts{{ end }}
+        </div>
+      </div>
+    </div>
+  {{ else }}
+    <div class="tag-header" style="padding: 2rem 0; text-align: center; border-bottom: 1px solid #eee; margin-bottom: 2rem;">
+      <h1 class="tag-title">{{ $tagName }}</h1>
+      {{ if $tagData.description }}
+        <p class="tag-description" style="font-size: 1.1rem; color: #666; max-width: 600px; margin: 1rem auto 0;">{{ $tagData.description }}</p>
+      {{ end }}
+      <div class="post-count" style="margin-top: 1rem; font-size: 0.9rem; color: #888;">
+        {{ len .Pages }} {{ if eq (len .Pages) 1 }}post{{ else }}posts{{ end }}
+      </div>
+    </div>
+  {{ end }}
+
+  <!-- Posts with this tag -->
+  <div class="tag-posts" style="max-width: 800px; margin: 0 auto; padding: 0 1rem;">
+    {{ range .Pages }}
+      <article class="post-summary" style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid #eee;">
+        <h2 style="margin-bottom: 0.5rem;">
+          <a href="{{ .Permalink }}" style="text-decoration: none; color: inherit;">{{ .Title }}</a>
+        </h2>
+        <div class="post-meta" style="color: #666; font-size: 0.9rem; margin-bottom: 1rem;">
+          {{ .Date.Format "January 2, 2006" }}
+          {{ if .Params.author }} • by {{ .Params.author }}{{ end }}
+          {{ if .ReadingTime }} • {{ .ReadingTime }} min read{{ end }}
+        </div>
+        {{ if .Summary }}
+          <p style="line-height: 1.6; color: #444;">{{ .Summary }}</p>
+        {{ end }}
+        <a href="{{ .Permalink }}" style="color: #007acc; text-decoration: none; font-weight: 500;">Read more →</a>
+      </article>
+    {{ end }}
+  </div>
+
+  {{ if eq (len .Pages) 0 }}
+    <div style="text-align: center; padding: 4rem 1rem; color: #666;">
+      <p>No posts found with the tag "{{ $tagName }}"</p>
+    </div>
+  {{ end }}
+{{ end }}

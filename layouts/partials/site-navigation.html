@@ -1,0 +1,42 @@
+<nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l center items-center justify-between">
+    <a href="{{ .Site.Home.RelPermalink }}" class="f3 fw2 hover-white white-90 dib no-underline">
+      {{ with .Site.Params.site_logo }}
+        <img src="{{ urls.RelURL . }}" class="w100 mw5-ns" alt="{{ $.Site.Title }}" />
+      {{ else }}
+        {{ .Site.Title }}
+      {{ end }}
+    </a>
+    <div class="flex-l items-center">
+      {{ partials.Include "i18nlist.html" . }}
+      {{ if .Site.Menus.main }}
+        <ul class="list flex flex-row pa0 ma0">
+          {{ range .Site.Menus.main }}
+          <li class="relative list pa2">
+              <!-- Render the main menu link -->
+            <a href="{{ .URL | relURL }}" 
+            class="link white dim" 
+            {{ if .Params.newtab }} target="_blank" rel="noopener"{{ end }}>
+              {{ .Name }}
+            </a>
+              <!-- If this menu item has child links, render a dropdown -->
+           {{ if .HasChildren }}
+          <ul class="absolute left-0 mt2 bg-dark-gray pa2 list">
+          {{ range .Children }}
+            <li class="pa2">
+                <!-- Render each child menu item -->
+              <a href="{{ .URL | relURL }}" class="link white dim">
+                {{ .Name }}
+              </a>
+            </li>
+          {{ end }}
+          </ul>
+          {{ end }}
+            </li>
+          {{ end }}
+        </ul>
+      {{ end }}
+      {{ partials.IncludeCached "social/follow.html" . }}
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Writings on A Portfolio</title>
+    <link>http://localhost:1313/writings/</link>
+    <description>Recent content in Writings on A Portfolio</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 18 Aug 2025 11:26:57 -0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/writings/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Poetry</title>
+      <link>http://localhost:1313/writings/a-nice-poem/</link>
+      <pubDate>Mon, 18 Aug 2025 11:26:57 -0700</pubDate>
+      <guid>http://localhost:1313/writings/a-nice-poem/</guid>
+      <description>&lt;h2 id=&#34;nostalgia-of-days&#34;&gt;Nostalgia of Days&lt;/h2&gt;&#xA;&lt;p&gt;Where my father&amp;rsquo;s from it&amp;rsquo;s harvest time&#xA;The orchards rich with bounties fine&lt;/p&gt;&#xA;&lt;p&gt;And the days are getting shorter&#xA;But I&amp;rsquo;m still getting older.&lt;/p&gt;&#xA;&lt;p&gt;Where my mother&amp;rsquo;s from it&amp;rsquo;s raining steady&#xA;The humid heat hangs thick and heavy&lt;/p&gt;&#xA;&lt;p&gt;And the days are getting shorter&#xA;But I&amp;rsquo;m still getting older.&lt;/p&gt;&#xA;&lt;p&gt;Where I am from it&amp;rsquo;s turning sweet&#xA;the leaves are falling from the trees&lt;/p&gt;&#xA;&lt;p&gt;And the days are getting shorter&#xA;But I&amp;rsquo;m still getting older.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Writings</title>
+      <link>http://localhost:1313/writings/_writings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/writings/_writings/</guid>
+      <description>&lt;p&gt;You may find yourself in strange worlds. Choose wisely.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

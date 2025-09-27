@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Comics on Back to the Archives</title>
+    <link>http://localhost:1313/comics/comics-scrpt/</link>
+    <description>Recent content in Comics on Back to the Archives</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 20 Feb 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/comics/comics-scrpt/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/comics/comics-scrpt/faith-scrpt/</link>
+      <pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/comics/comics-scrpt/faith-scrpt/</guid>
+      <description>&lt;h2 id=&#34;crisis-of-faith&#34;&gt;Crisis of Faith&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Notes:&lt;/strong&gt; Another experiment in repeat panels, specifically focusing on using repeat panels to create space between each line of dialogue or moment. Coloring and lighting practice here as well.&lt;br&gt;&#xA;There is certainly a way to condense this script so that it’s shorter and makes more efficient use of space. However, want to acknowledge that in a shorter script the writer has more control over the panel structure. In a 6+ issue run it’s tedious and inefficient for the writer to try and retain full control over every single panel and every single page.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Scripts</title>
+      <link>http://localhost:1313/comics/comics-scrpt/ck-scrpt/</link>
+      <pubDate>Thu, 14 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/comics/comics-scrpt/ck-scrpt/</guid>
+      <description>&lt;h2 id=&#34;cruelty-and-kindness&#34;&gt;Cruelty and Kindness&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Notes:&lt;/strong&gt; The purpose of this story is to practice comic script formatting and the re-use of panel structures in order to streamline personal comic process. Additionally, since I am a poor colorist, this comic will make use of the gray scale and contrast in order to convey depth and distinction.&lt;/p&gt;&#xA;&lt;h2 id=&#34;page-1&#34;&gt;Page 1&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Panel 1A (Wide)&lt;/strong&gt;&lt;br&gt;&#xA;Superman sitting in his costume on the edge of a Gotham rooftop, overlooking the city. He is silhouetted by the skyline. It is night time.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

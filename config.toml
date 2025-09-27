@@ -1,0 +1,100 @@
+baseURL = 'https://haitchgoose.com'
+languageCode = 'en-us'
+title = 'Back to the Archives'
+theme = 'ananke'
+
+[params]
+cover_dimming_class = "bg-dark-green-40"
+body_classses = "avenir bg-dark-green"
+custom_css = ["/css/custom.css"]
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      hardWraps = true   # treat soft line breaks as <br>
+      unsafe = true 
+
+
+
+[[params.social]]
+  name = "GitHub"
+  url = "https://github.com/username"
+
+[[params.social]]
+  name = "Twitter"
+  url = "https://twitter.com/username"
+
+
+[[menu.main]]
+  name = "Writing"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "Poetry"
+  url = "/writing/poetry"
+  parent = "Writing"
+  weight = 2
+  params.newtab = true
+
+[[menu.main]]
+  name = "Prose"
+  url = "/writing/prose"
+  parent = "Writing"
+  weight = 3
+
+[[menu.main]]
+  name = "Comics"
+  url = "/comics/"
+  weight = 4
+
+
+[[menu.main]]
+  name = "Art"
+  url = "/comics/comics-art"
+  parent = "Comics"
+  weight = 5
+
+[[menu.main]]
+  name = "Scripts"
+  url = "/comics/comics-scrpt"
+  parent = "Comics"
+  weight = 6
+
+[[menu.main]]
+  name = "Other Work"
+  url = "/"
+  weight = 7
+
+[[menu.main]]
+  name = "International Examiner"
+  url = "https://iexaminer.org/author/helena-goos/"
+  parent = "Other Work"
+  weight = 8
+
+[[menu.main]]
+  name = "Marketing Choices"
+  url = "https://marketingchoices.com/2024/11/07/helena-goos/"
+  parent = "Other Work"
+  weight = 9
+
+[[menu.main]]
+  name = "Seattle Arts and Lectures"
+  url = "/"
+  parent = "Other Work"
+  weight = 10
+
+[[menu.main]]
+  name = "About"
+  url = "/about/"
+  weight = 11
+
+
+
+
+

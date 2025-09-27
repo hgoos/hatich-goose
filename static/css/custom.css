@@ -1,0 +1,41 @@
+/* Hide dropdowns by default */
+ul li ul {
+  display: none;
+}
+
+/* Show dropdown when hovering over parent */
+ul li:hover > ul {
+  display: block;
+}
+
+/* Optional styling tweaks */
+ul li ul {
+  position: absolute;
+  min-width: 150px;
+  background: #333;
+  z-index: 1000;
+}
+
+ul li ul li a {
+  display: block;
+  padding: 8px;
+}
+
+/* Add external link arrows to any navigation links that go outside your site */
+nav a[href^="http"]:after {
+  content: " ↗";
+  font-size: 0.9em;
+  margin-left: 0.25em; /* small space between text and arrow */
+}
+
+/*.center-text {
+  text-align: center;
+}
+
+.right-text {
+  text-align: right;
+}
+
+.left-text {
+  text-align: left;
+}

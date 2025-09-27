@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Comics on Back to the Archives</title>
+    <link>http://localhost:1313/tags/comics/</link>
+    <description>Recent content in Comics on Back to the Archives</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 20 Feb 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/comics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/comics/comics-scrpt/faith-scrpt/</link>
+      <pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/comics/comics-scrpt/faith-scrpt/</guid>
+      <description>&lt;h2 id=&#34;crisis-of-faith&#34;&gt;Crisis of Faith&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Notes:&lt;/strong&gt; Another experiment in repeat panels, specifically focusing on using repeat panels to create space between each line of dialogue or moment. Coloring and lighting practice here as well.&lt;br&gt;&#xA;There is certainly a way to condense this script so that it’s shorter and makes more efficient use of space. However, want to acknowledge that in a shorter script the writer has more control over the panel structure. In a 6+ issue run it’s tedious and inefficient for the writer to try and retain full control over every single panel and every single page.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
