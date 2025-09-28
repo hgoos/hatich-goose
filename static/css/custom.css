@@ -28,6 +28,11 @@ nav a[href^="http"]:after {
   margin-left: 0.25em; /* small space between text and arrow */
 }
 
+/* Defines dropdown class */
+.dropdown:hover .dropdown-menu {
+    display: block !important;
+}
+
 /*.center-text {
   text-align: center;
 }
