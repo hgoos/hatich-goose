@@ -29,7 +29,7 @@ nav a[href^="http"]:after {
 }
 
 /* Defines dropdown class */
-.dropdown:hover .dropdown-menu {
+li.dropdown:hover ul.dropdown-menu {
     display: block !important;
 }
 
