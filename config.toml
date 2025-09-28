@@ -6,7 +6,7 @@ theme = 'ananke'
 [params]
 cover_dimming_class = "bg-dark-green-40"
 body_classses = "avenir bg-dark-green"
-custom_css = ["/css/custom.css"]
+custom_css = ["css/custom.css"]
 
 [taxonomies]
   tag = "tags"
