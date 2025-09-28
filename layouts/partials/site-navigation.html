@@ -12,7 +12,7 @@
       {{ if .Site.Menus.main }}
         <ul class="list flex flex-row pa0 ma0">
           {{ range .Site.Menus.main }}
-          <li class="relative list pa2">
+          <li class="relative list pa2 dropdown">
               <!-- Render the main menu link -->
             <a href="{{ .URL | relURL }}" 
             class="link white dim" 
