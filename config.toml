@@ -50,7 +50,7 @@ custom_css = ["css/custom.css"]
 
 [[menu.main]]
   name = "Comics"
-  url = "/comics/"
+  url = "/"
   weight = 4
 
 

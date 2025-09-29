@@ -6,6 +6,8 @@ tags = ["sonnets", "this fluttering ember", "kersian sonnets"]
 featured_image = ''
 featured_image_class = ''
 +++
+*(Commonly known as the Music Sonnet)*
+
 When first I came unto this land
 Across the stormy sea
 I brought my binjar and my songs

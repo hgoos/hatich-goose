@@ -6,14 +6,14 @@
     <description>Recent content in The Archives on Back to the Archives</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 27 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 29 Sep 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Sonnets of Keris</title>
-      <link>http://localhost:1313/writing/poetry/sonnets/keris/1read_me/</link>
-      <pubDate>Sat, 27 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/writing/poetry/sonnets/keris/1read_me/</guid>
-      <description>&lt;p&gt;Keris is a poet. He is well known for his role in the folktale Alisandre of the Lake, with whom he was in love with. Keris, Alisandre, and Corrinthia of the Bears were deeply embroiled in each other’s lives, living together as lovers. Below is a ballad describing a version of the tale.&lt;/p&gt;&#xA;&lt;p&gt;Keris’ poetry regarding Alisandre and Corinthia is often divided into three folios: Summer, Autumn, and Winter. Summer is often hopeful, full of life and describing the prosperous and developing love between the three people. Autumn describes the ultimate downfall of this love as Alisandre rides to war and discovers her family dead. Winter is after the suicide of Alisandre, where Keris deals with the grief of her passing.&lt;/p&gt;</description>
+      <link>http://localhost:1313/writing/poetry/sonnets/keris/1alis/</link>
+      <pubDate>Mon, 29 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/writing/poetry/sonnets/keris/1alis/</guid>
+      <description>&lt;p&gt;Keris is a poet. He is well known for his role in the folktale Alisandre of the Lake, with whom he was in love with. Keris, Alisandre, and Corrinthia of the Bears were deeply embroiled in each other’s lives, living together as lovers. Below is a ballad describing a version of the tale.&lt;/p&gt;&#xA;&lt;p&gt;Keris&amp;rsquo; Sonnets (or Kersian Sonnets, as they are known) are comprised of three quatrains followed by a couplet. The four lines of the quatrain alternate iambic tetrameter and iambic trimeter, respectively. The couplet is a fourteener (iambic heptameter). The rhyme scheme is &lt;em&gt;ABAB CDCD EFEF GG.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>American Sentences</title>
@@ -62,7 +62,7 @@
       <link>http://localhost:1313/about/</link>
       <pubDate>Wed, 03 Sep 2025 09:22:57 -0700</pubDate>
       <guid>http://localhost:1313/about/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/about/clam.jpg&#34;&#xA;style=&#34;width:300px;&#34;&gt;&lt;br&gt;&#xA;&lt;img src=&#34;http://localhost:1313/images/about/porch.jpg&#34;&#xA;style=&#34;width:300px;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/about/clam.jpg&#34; alt=&#34;Clamming!&#34; align=&#34;left&#34;&#xA;style=&#34;margin: 0 15px 15px 0; width: 300px;&#34;&gt;&lt;br&gt;&#xA;&lt;img src=&#34;http://localhost:1313/images/about/porch.jpg&#34; alt=&#34;Porch&#34; align=&#34;right&#34; style=&#34;margin: 0 0 15px 15px; width: 300px;&#34;&gt;&lt;br&gt;&#xA;The name&amp;rsquo;s Goos. Helena Goos.&lt;/p&gt;&#xA;&lt;p&gt;A twenty-two year old from Seattle, Washington, Goos was published at the age of fifteen through Seattle Arts and Lectures. Of course, she got it into her head that she could be a writer. So here she is, regretting not double-majoring in Comp-Sci, publishing and building her own portfolio, looking for a job.&lt;/p&gt;</description>
+      <description>&lt;div class=&#34;image-row&#34; style=&#34;display: flex; gap: 1rem; margin: 2rem auto; flex-wrap: wrap; justify-content: center; align-items: center; max-width: 100%;&#34;&gt;&#xD;&#xA;  &#xD;&#xA;    &#xD;&#xA;    &lt;div style=&#34;flex: 1; min-width: 200px; max-width: 300px;&#34;&gt;&#xD;&#xA;      &lt;img src=&#34;http://localhost:1313/images/about/clam.jpg&#34; alt=&#34;&#34; style=&#34;width: 100%; height: auto; object-fit: cover; display: block;&#34;&gt;&#xD;&#xA;    &lt;/div&gt;&#xD;&#xA;  &#xD;&#xA;    &#xD;&#xA;    &lt;div style=&#34;flex: 1; min-width: 200px; max-width: 300px;&#34;&gt;&#xD;&#xA;      &lt;img src=&#34;http://localhost:1313/images/about/porch.jpg&#34; alt=&#34;&#34; style=&#34;width: 100%; height: auto; object-fit: cover; display: block;&#34;&gt;&#xD;&#xA;    &lt;/div&gt;&#xD;&#xA;  &#xD;&#xA;&lt;/div&gt;&#xA;&lt;p&gt;The name&amp;rsquo;s Goos. Helena Goos.&lt;/p&gt;&#xA;&lt;p&gt;A twenty-two year old from Seattle, Washington, Goos was published at the age of fifteen through Seattle Arts and Lectures. Of course, she got it into her head that she could be a writer. So here she is, regretting not double-majoring in Comp-Sci, publishing and building her own portfolio, looking for a job.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
@@ -156,18 +156,11 @@
       <description>&lt;p&gt;Hey, it’s nice to meet you I’m your&lt;br&gt;&#xA;Older brother now&lt;br&gt;&#xA;Your face is sweet as honeycomb&lt;br&gt;&#xA;Your hair like feathered down.&lt;br&gt;&#xA;Oh baby brother I can’t wait&lt;br&gt;&#xA;to teach you all I know&lt;br&gt;&#xA;We’ll play at knights and dragons&lt;br&gt;&#xA;And tussle in the snow.&lt;br&gt;&#xA;I’ll show you all the bugs and things&lt;br&gt;&#xA;That wriggle on the ground&lt;br&gt;&#xA;We’ll unearth logs and stones and rocks&lt;br&gt;&#xA;and run through muddy grounds.&lt;br&gt;&#xA;&lt;span style=&#34;margin-left:2.5em;&#34;&gt;O baby brother I will be the lion to your lamb,&lt;/span&gt;&lt;br&gt;&#xA;&lt;span style=&#34;margin-left:2.5em;&#34;&gt;I’ll keep you safe, I’ll watch your back, I’ll do the best I can.&lt;/span&gt;&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Autumn Folio, Sonnet 13</title>
-      <link>http://localhost:1313/writing/poetry/sonnets/keris/af_snt10/</link>
-      <pubDate>Fri, 22 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/writing/poetry/sonnets/keris/af_snt10/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Summer Folio, Sonnet 13</title>
       <link>http://localhost:1313/writing/poetry/sonnets/keris/sf_snt13/</link>
       <pubDate>Fri, 22 Nov 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/writing/poetry/sonnets/keris/sf_snt13/</guid>
-      <description>&lt;p&gt;When first I came unto this land&lt;br&gt;&#xA;Across the stormy sea&lt;br&gt;&#xA;I brought my binjar and my songs&lt;br&gt;&#xA;And all my harmonies.&lt;br&gt;&#xA;I wandered long, a troubadour,&lt;br&gt;&#xA;In search of newer sound&lt;br&gt;&#xA;And in this land so large and vast&lt;br&gt;&#xA;A freshness did abound.&lt;br&gt;&#xA;And lo! It had me in a hold&lt;br&gt;&#xA;of scales and notes so fine,&lt;br&gt;&#xA;I could not help but copy-straight&lt;br&gt;&#xA;So I could make it mine.&lt;br&gt;&#xA;&lt;span style=&#34;margin-left:2.5em;&#34;&gt;And so I pluck my strings with care and hope that you will hear&lt;/span&gt;&lt;br&gt;&#xA;&lt;span style=&#34;margin-left:2.5em;&#34;&gt;The echoes of my homeland and the love that I found here.&lt;/span&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;em&gt;(Commonly known as the Music Sonnet)&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;When first I came unto this land&lt;br&gt;&#xA;Across the stormy sea&lt;br&gt;&#xA;I brought my binjar and my songs&lt;br&gt;&#xA;And all my harmonies.&lt;br&gt;&#xA;I wandered long, a troubadour,&lt;br&gt;&#xA;In search of newer sound&lt;br&gt;&#xA;And in this land so large and vast&lt;br&gt;&#xA;A freshness did abound.&lt;br&gt;&#xA;And lo! It had me in a hold&lt;br&gt;&#xA;of scales and notes so fine,&lt;br&gt;&#xA;I could not help but copy-straight&lt;br&gt;&#xA;So I could make it mine.&lt;br&gt;&#xA;&lt;span style=&#34;margin-left:2.5em;&#34;&gt;And so I pluck my strings with care and hope that you will hear&lt;/span&gt;&lt;br&gt;&#xA;&lt;span style=&#34;margin-left:2.5em;&#34;&gt;The echoes of my homeland and the love that I found here.&lt;/span&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Untitled Lake Sonnet / Gray Matter Sonnet</title>
@@ -217,6 +210,13 @@
       <pubDate>Thu, 22 Feb 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/writing/poetry/sonnets/keris/sf_snt1/</guid>
       <description>&lt;p&gt;We quarrel oft the Bear and I&lt;br&gt;&#xA;she hates my wit and writ,&lt;br&gt;&#xA;But she is stubborn as a dog&lt;br&gt;&#xA;and I will not submit.&lt;br&gt;&#xA;I match the Bear both tooth and claw,&lt;br&gt;&#xA;(which she hates the most)&lt;br&gt;&#xA;Each parry, jab, and spited word,&lt;br&gt;&#xA;I give not ground or post.&lt;br&gt;&#xA;The Bear is often in my thoughts&lt;br&gt;&#xA;and sometimes in my dreams,&lt;br&gt;&#xA;she tracks me down with utmost skill&lt;br&gt;&#xA;and then does as she pleases.&lt;br&gt;&#xA;&lt;span style=&#34;margin-left:2.5em;&#34;&gt;The Bear she says she loves you best, but I think this a lie,&lt;/span&gt;&lt;br&gt;&#xA;&lt;span style=&#34;margin-left:2.5em;&#34;&gt;I see the way she looks at me and thinks that she is sly.&lt;/span&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Autumn Folio, Sonnet 10</title>
+      <link>http://localhost:1313/writing/poetry/sonnets/keris/af_snt10/</link>
+      <pubDate>Wed, 08 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/writing/poetry/sonnets/keris/af_snt10/</guid>
+      <description>&lt;p&gt;You stare into the distance love,&lt;br&gt;&#xA;(I wish to see your mind)&lt;br&gt;&#xA;I see that when you look at me&lt;br&gt;&#xA;You look with empty eyes.&lt;br&gt;&#xA;You haven’t left your vigil love,&lt;br&gt;&#xA;Beside the tower’s port,&lt;br&gt;&#xA;You look to where your family lies,&lt;br&gt;&#xA;Towards your father’s court.&lt;br&gt;&#xA;&lt;em&gt;Love come in, you’ll catch your death,&lt;/em&gt;&lt;br&gt;&#xA;I say, and draw you in,&lt;br&gt;&#xA;But worthless are my soothing words&lt;br&gt;&#xA;To reach your walls within.&lt;br&gt;&#xA;&lt;span style=&#34;margin-left:2.5em;&#34;&gt;I hear your sobs on quiet nights, when you should be asleep,&lt;/span&gt;&lt;br&gt;&#xA;&lt;span style=&#34;margin-left:2.5em;&#34;&gt;I try to steal away your frown, but you do naught but weep.&lt;/span&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Crisis of Faith</title>

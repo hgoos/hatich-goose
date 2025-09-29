@@ -1,62 +1,85 @@
-{{ define "main" }}
+{{ define "header" }}
   {{ $tagName := .Title }}
   {{ $tagKey := urlize $tagName }}
   {{ $tagData := index .Site.Data.tags $tagKey }}
-  <!-- Debug Section-->
-  <!--<div style="background: red; color: white; padding: 10px;">DEBUG: Custom template loaded!</div>
-  <div style="background: yellow; padding: 10px; margin: 10px;">
-  <p>Tag Key: {{ $tagKey }}</p>
-  <p>Tag Data: {{ $tagData }}</p>
-  <p>Hero Image: {{ $tagData.hero_image }}</p>
-</div>
-  <!-Hero Section -->
+ 
   {{ if $tagData.featured_image }}
-   <div class="tag-hero" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('{{ $tagData.featured_image }}'); background-size: cover; background-position: center; min-height: 400px; display: flex; align-items: center; justify-content: center; color: white; text-align: center;">
-      <div class="hero-content">
-        <h1 class="tag-title" style="font-size: 3rem; margin-bottom: 1rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.7);">{{ $tagName }}</h1>
-        {{ if $tagData.description }}
-          <p class="tag-description" style="font-size: 1.2rem; max-width: 600px; margin: 0 auto; text-shadow: 1px 1px 2px rgba(0,0,0,0.7);">{{ $tagData.description }}</p>
-        {{ end }}
-        <div class="post-count" style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.9;">
-          {{ len .Pages }} {{ if eq (len .Pages) 1 }}post{{ else }}posts{{ end }}
+    {{/* Use featured image with Ananke's styling */}}
+    {{ $featured_image_class := $tagData.featured_image_class | compare.Default "cover bg-center" }}
+    {{ $cover_dimming_class := $tagData.cover_dimming_class | compare.Default "bg-black-60" }}
+    <header class="{{ $featured_image_class }}" style="background-image: url('{{ $tagData.featured_image }}');">
+      <div class="{{ $cover_dimming_class }}">
+        {{ partials.Include "site-navigation.html" . }}
+        <div class="tc-l pv6 ph3 ph4-ns">
+          <div class="f2 f1-l fw2 white-90 mb0 lh-title">{{ $tagName }}</div>
+          {{ if $tagData.description }}
+            <div class="fw1 f5 f3-l white-80 measure-wide-l center lh-copy mt3 mb4">
+              {{ $tagData.description }}
+            </div>
+          {{ end }}
+          <div class="fw1 f6 white-70 mt3">
+            {{ len .Pages }} {{ if eq (len .Pages) 1 }}post{{ else }}posts{{ end }}
+          </div>
         </div>
       </div>
-    </div>
+    </header>
   {{ else }}
-    <div class="tag-header" style="padding: 2rem 0; text-align: center; border-bottom: 1px solid #eee; margin-bottom: 2rem;">
-      <h1 class="tag-title">{{ $tagName }}</h1>
-      {{ if $tagData.description }}
-        <p class="tag-description" style="font-size: 1.1rem; color: #666; max-width: 600px; margin: 1rem auto 0;">{{ $tagData.description }}</p>
-      {{ end }}
-      <div class="post-count" style="margin-top: 1rem; font-size: 0.9rem; color: #888;">
-        {{ len .Pages }} {{ if eq (len .Pages) 1 }}post{{ else }}posts{{ end }}
-      </div>
-    </div>
-  {{ end }}
-
-  <!-- Posts with this tag -->
-  <div class="tag-posts" style="max-width: 800px; margin: 0 auto; padding: 0 1rem;">
-    {{ range .Pages }}
-      <article class="post-summary" style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid #eee;">
-        <h2 style="margin-bottom: 0.5rem;">
-          <a href="{{ .Permalink }}" style="text-decoration: none; color: inherit;">{{ .Title }}</a>
-        </h2>
-        <div class="post-meta" style="color: #666; font-size: 0.9rem; margin-bottom: 1rem;">
-          {{ .Date.Format "January 2, 2006" }}
-          {{ if .Params.author }} • by {{ .Params.author }}{{ end }}
-          {{ if .ReadingTime }} • {{ .ReadingTime }} min read{{ end }}
+    {{/* No featured image - use simple header */}}
+    <header>
+      <div class="{{ .Site.Params.background_color_class | compare.Default "bg-black" }}">
+        {{ partials.Include "site-navigation.html" . }}
+        <div class="tc-l pv4 pv6-l ph3 ph4-ns">
+          <h1 class="f2 f-subheadline-l fw2 white-90 mb0 lh-title">
+            {{ $tagName }}
+          </h1>
+          {{ if $tagData.description }}
+            <h2 class="fw1 f5 f3-l white-80 measure-wide-l center mt3">
+              {{ $tagData.description }}
+            </h2>
+          {{ end }}
+          <div class="fw1 f6 white-70 mt3">
+            {{ len .Pages }} {{ if eq (len .Pages) 1 }}post{{ else }}posts{{ end }}
+          </div>
         </div>
-        {{ if .Summary }}
-          <p style="line-height: 1.6; color: #444;">{{ .Summary }}</p>
-        {{ end }}
-        <a href="{{ .Permalink }}" style="color: #007acc; text-decoration: none; font-weight: 500;">Read more →</a>
-      </article>
+      </div>
+    </header>
+  {{ end }}
+{{ end }}
+
+{{ define "main" }}
+  <div class="mw8 center ph3 ph5-l">
+    <section class="pv4">
+      {{ $pinned := where .Pages ".Params.pinned" true }}
+      {{ $regular := where .Pages ".Params.pinned" "!=" true }}
+      
+      {{/* Display pinned posts first */}}
+      {{ range $pinned }}
+        <div class="mb4 mb5-l bb b--black-10 pb4">
+          <div class="bg-light-yellow pa2 mb2 br2">
+            <span class="f7 fw6 ttu tracked">📌 Pinned</span>
+          </div>
+          {{ .Render "summary" }}
+          <div class="mt3">
+            <a href="{{ .Permalink }}" class="link blue hover-dark-blue fw6">Read more →</a>
+          </div>
+        </div>
+      {{ end }}
+      
+      {{/* Display regular posts */}}
+      {{ range $regular }}
+        <div class="mb4 mb5-l bb b--black-10 pb4">
+          {{ .Render "summary" }}
+          <div class="mt3">
+            <a href="{{ .Permalink }}" class="link blue hover-dark-blue fw6">Read more →</a>
+          </div>
+        </div>
+      {{ end }}
+    </section>
+   
+    {{ if eq (len .Pages) 0 }}
+      <div class="tc pv5 gray">
+        <p class="f4">No posts found with this tag.</p>
+      </div>
     {{ end }}
   </div>
-
-  {{ if eq (len .Pages) 0 }}
-    <div style="text-align: center; padding: 4rem 1rem; color: #666;">
-      <p>No posts found with the tag "{{ $tagName }}"</p>
-    </div>
-  {{ end }}
 {{ end }}
