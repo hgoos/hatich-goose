@@ -1,7 +1,7 @@
 +++
 date = '2025-09-18'
 draft = true
-title = 'American Sentences'
+title = '풍수 / Geomancy'
 tags = ["american sentences"]
 featured_image = 'images/writing/poetry/AmSent/firstStps.jpg'
 featured_image_class = "contain"

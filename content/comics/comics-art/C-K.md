@@ -1,6 +1,6 @@
 +++
 date = '2025-09-03T10:12:59-07:00'
-draft = true
+draft = false
 title = "Cruelty and Kindness"
 tags = ["art", "comics" ]
 featured_image = 'images/heroim/ComicsFont.png'

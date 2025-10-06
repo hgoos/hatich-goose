@@ -1,12 +1,11 @@
 +++
 date = '2025-09-18'
 draft = false
-title = 'American Sentences'
+title = 'American Infancia'
 tags = ["american sentences"]
 featured_image = 'images/writing/poetry/AmSent/firstStps.jpg'
 featured_image_class = "contain"
 +++
-## American *Infancia*
 
 **American *Infancia***
 *July 12th, 2024*

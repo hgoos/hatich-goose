@@ -1,8 +1,9 @@
 +++
 date = '2025-09-16'
 draft = true
-title = 'American Sentences'
+title = 'First Steps'
 tags = ["american sentences"]
+pinned = true
 featured_image = 'images/writing/poetry/AmSent/firstStps.jpg'
 featured_image_class = "contain"
 +++

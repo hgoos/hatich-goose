@@ -1,12 +1,12 @@
 +++
 date = '2025-09-17'
 draft = true
-title = 'American Sentences'
+title = 'An Irish Interlude'
 tags = ["american sentences"]
 featured_image = 'images/writing/poetry/AmSent/firstStps.jpg'
 featured_image_class = "contain"
 +++
-## An Irish Interlude
+
 **Notes:** These are American Sentences written while in Ireland in September 2024. I write American Sentences wherever I go. 
 
 ---

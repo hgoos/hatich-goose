@@ -9,9 +9,9 @@ featured_image_class = ''
 +++
 Keris is a poet. He is well known for his role in the folktale Alisandre of the Lake, with whom he was in love with. Keris, Alisandre, and Corrinthia of the Bears were deeply embroiled in each other’s lives, living together as lovers. Below is a ballad describing a version of the tale. 
 
-Keris' Sonnets (or Kersian Sonnets, as they are known) are comprised of three quatrains followed by a couplet. The four lines of the quatrain alternate iambic tetrameter and iambic trimeter, respectively. The couplet is a fourteener (iambic heptameter). The rhyme scheme is *ABAB CDCD EFEF GG.*
+Keris' Sonnets (or Kerisian Sonnets, as they are known) are comprised of three quatrains followed by a couplet. The four lines of the quatrain alternate iambic tetrameter and iambic trimeter, respectively. The couplet is a fourteener (iambic heptameter). The rhyme scheme is *ABAB CDCD EFEF GG.*
 
-Keris’ poetry regarding Alisandre and Corinthia is often divided into three folios: Summer, Autumn, and Winter. Summer is often hopeful, full of life and describing the prosperous and developing love between the three people. Autumn describes the ultimate downfall of this love as Alisandre rides to war and discovers her family dead. Winter is after the suicide of Alisandre, where Keris deals with the grief of her passing. 
+Keris’ poetry regarding Alisandre and Corinthia is often divided into three folios: Summer, Autumn, and Winter. Summer is hopeful, full of life and describing the prosperous and developing love between the three people. Autumn describes the ultimate downfall of this love as Alisandre rides to war and discovers her family dead. Winter is after the suicide of Alisandre, where Keris deals with the grief of her passing. 
 
 
 
