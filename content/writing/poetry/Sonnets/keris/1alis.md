@@ -4,8 +4,8 @@ draft = true
 title = "The Sonnets of Keris"
 tags = ["sonnets", "this fluttering ember", "kersian sonnets"]
 pinned = true
-featured_image = ''
-featured_image_class = ''
+featured_image = '/images/writing/poetry/keris/alis2.jpg'
+featured_image_class = 'contain'
 +++
 Keris is a poet. He is well known for his role in the folktale Alisandre of the Lake, with whom he was in love with. Keris, Alisandre, and Corrinthia of the Bears were deeply embroiled in each other’s lives, living together as lovers. Below is a ballad describing a version of the tale. 
 

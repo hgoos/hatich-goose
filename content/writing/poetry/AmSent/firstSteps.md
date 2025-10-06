@@ -16,14 +16,14 @@ featured_image_class = "contain"
 My mother came from a land across the sea many miles she flew to here.
 
 My father grew up picking apples and cherries on big orchards. 
-![](/images/writing/poetry/AmSent/parents.jpg)
+![](/hatich-goose/images/writing/poetry/AmSent/parents.jpg)
 
 ---
 
 **American Agates**
 *(May 5th, 2024)*
 On the beach, my father collects stones that tumbled down from the mountains. 
-![](/images/writing/poetry/AmSent/agates.jpg)
+![](/hatich-goose/images/writing/poetry/AmSent/agates.jpg)
 
 ---
 
@@ -35,7 +35,7 @@ I guess I’m at an age now where the sun burns my pa and me.
 
 **Double American Lives**
 *(May 5th 2024)*
-On the shores of the Chesapeake, my pockets heavy with rocks, I look at the ships and wonder what the weight of a life would be in my pocket.![](/images/writing/poetry/AmSent/dbleLives.jpg)
+On the shores of the Chesapeake, my pockets heavy with rocks, I look at the ships and wonder what the weight of a life would be in my pocket.![](/hatich-goose/images/writing/poetry/AmSent/dbleLives.jpg)
 
 ---
 

@@ -3,11 +3,11 @@ date = '2025-09-03T09:22:57-07:00'
 draft = true
 title = 'About'
 description = "Hi. It's me."
-featured_image = "/images/foggy-shore.jpg"
+featured_image = "/hatich-goose/images/foggy-shore.jpg"
 featured_image_class = "cover bg-bottom"
 cover_dimming_class = "bg-black-60"
 +++
-{{<image-row images="/images/about/clam.jpg, /images/about/porch.jpg" align="center" max-width="300px">}}
+{{<image-row images="/hatich-goose/images/about/clam.jpg, /hatich-goose/images/about/porch.jpg" align="center" max-width="300px">}}
 
 The name's Goos. Helena Goos.
 
@@ -22,7 +22,7 @@ In the interim, she's networking, writing, reading, and being less than mediocre
 All thing's considered: she's living the dream.
 
 <br>
-    <img src="/images/about/shitrck.jpg">
+    <img src="/hatich-goose/images/about/shitrck.jpg">
 </br>
 
 <br><br>
