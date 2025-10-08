@@ -1,6 +1,6 @@
 +++
 date = '2025-08-18T11:26:57-07:00'
-draft = true
+draft = false
 title = 'Poetry'
 featured_image = 'images/writing/poetry/fall-father.jpg'
 +++

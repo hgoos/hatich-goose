@@ -1,6 +1,6 @@
 +++
 date = '2024-10-23'
-draft = true
+draft = false
 title = 'Sonnet for the Coming Winter'
 tags = ["sonnets", "this fluttering ember" ]
 featured_image = ''

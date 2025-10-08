@@ -1,6 +1,6 @@
 +++
 date = '2022-07-14'
-draft = true
+draft = false
 title = 'Cruelty and Kindness'
 tags = ["comic scripts" ]
 featured_image = 'images/comics/c-heroim/Ck.heroim.jpg'

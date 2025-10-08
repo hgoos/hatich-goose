@@ -1,6 +1,6 @@
 +++
 date = '2024-12-05'
-draft = true
+draft = false
 title = 'SPQA'
 tags = ["the dreams of pontius pilate", "Faith & Religion"]
 featured_image = 'images/writing/poetry/pontius/spqa.png'
@@ -19,7 +19,7 @@ In the seizing of the day
 They break down the doors of the Senate
 Demanding more
 
-[Bulls horn’s](https://i.abcnewsfe.com/a/6674362d-9d3f-4cee-a287-0550eb6b315c/jacob-chansley-shaman-gty-mz-33-230313_1678734179641_hpEmbed_3x2.jpg) distinguish the velites
+<a href="https://i.abcnewsfe.com/a/6674362d-9d3f-4cee-a287-0550eb6b315c/jacob-chansley-shaman-gty-mz-33-230313_1678734179641_hpEmbed_3x2.jpg" target="_blank" rel="noopener noreferrer">Bull's horns</a> distinguish the velites
 From the legionary
 
 Stars and bars

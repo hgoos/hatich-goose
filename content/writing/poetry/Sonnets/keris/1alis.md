@@ -1,6 +1,6 @@
 +++
 date = '2025-09-29'
-draft = true
+draft = false
 title = "The Sonnets of Keris"
 tags = ["sonnets", "this fluttering ember", "kersian sonnets"]
 pinned = true

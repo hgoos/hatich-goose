@@ -1,6 +1,6 @@
 +++
 date = '2024-11-25'
-draft = true
+draft = false
 title = "The Obedient Son"
 tags = ["sonnets", "this fluttering ember", "bible sonnets", "faith & religion"]
 featured_image = ''

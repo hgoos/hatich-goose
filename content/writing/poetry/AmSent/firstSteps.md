@@ -1,6 +1,6 @@
 +++
 date = '2025-09-16'
-draft = true
+draft = false
 title = 'First Steps'
 tags = ["american sentences"]
 pinned = true

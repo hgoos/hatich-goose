@@ -1,6 +1,6 @@
 +++
 date = '2025-01-13'
-draft = true
+draft = false
 title = 'A Poker Game with the Anemoi'
 tags = ["sonnets", "this fluttering ember" ]
 featured_image = ''

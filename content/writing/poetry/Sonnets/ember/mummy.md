@@ -1,6 +1,6 @@
 +++
 date = '2025-08-03'
-draft = true
+draft = false
 title = 'Mummification at Constantinople'
 tags = ["sonnets", "This Fluttering Ember" ]
 featured_image = ''

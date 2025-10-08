@@ -1,6 +1,6 @@
 +++
 date = '2025-08-02'
-draft = true
+draft = false
 title = 'No Secrets'
 tags = ["sonnets", "This Fluttering Ember" ]
 featured_image = ''

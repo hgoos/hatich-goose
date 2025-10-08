@@ -1,6 +1,6 @@
 +++
 date = '2025-08-08'
-draft = true
+draft = false
 title = 'Scarlet Letters'
 tags = ["sonnets", "This Fluttering Ember", "Faith & Religion" ]
 featured_image = ''

@@ -1,6 +1,6 @@
 +++
 date = '2025-03-12'
-draft = true
+draft = false
 title = 'The Veritas Symphony (Speak Truth to All Things)'
 tags = ["the dreams of pontius pilate", "faith & religion"]
 featured_image = ''

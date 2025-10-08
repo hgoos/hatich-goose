@@ -1,6 +1,6 @@
 +++
 date = '2023-02-20'
-draft = true
+draft = false
 title = 'Crisis of Faith'
 tags = ["comic scripts", "Faith & Religion"]
 featured_image = 'images/comics/c-heroim/CoF.png'

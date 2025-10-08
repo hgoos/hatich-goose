@@ -1,6 +1,6 @@
 +++
 date = '2024-11-23'
-draft = true
+draft = false
 title = """Cain's Sonnet"""
 tags = ["sonnets", "this fluttering ember", "bible sonnets", "faith & religion"]
 featured_image = ''
