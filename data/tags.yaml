@@ -1,10 +1,17 @@
+american-sentences: 
+  description: "17 syllables. One sentence."
+
+
 faith--religion:
   description: "hello world"
 
 kersian-sonnets:
   description: "The sonnets of Keris"
-  featured_image: "'haitch-goose/images/heroim/alisLakeMiddle.jpg"
+  featured_image: "'/images/heroim/alisLakeMiddle.jpg"
   featured_image_class: "contain"
+
+seattle-arts-and-lectures:
+  description: "Where it all began."
 
 sonnets:
   description: "Rhyme Rhyme Rhyme"
@@ -15,8 +22,7 @@ the-dreams-of-pontius-pilate:
 
 this-fluttering-ember:
   description: "I've been trying to write sonnets since I first started reading them. English Sonnets were my most common attempts, but something felt...unatural about them. In a college class we were assigned to invent a form of poetry. I didn’t invent the Kerisian Sonnet there, but after. I created a sonnet that fits my internal rhythm for a character who is a poet, Keris. If you are curious about the form and the poet, I would direct you to the post at the top of this page regarding the Sonnets of Keris."
-  featured_image: "/haitch-goose/images/heroim/angel-wings.png"
+  featured_image: "/images/heroim/angel-wings.png"
   cover_dimming_class: "bg-black-50"
 
-american-sentences: 
-  description: "17 syllables. One sentence."
+

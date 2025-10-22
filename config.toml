@@ -85,7 +85,7 @@ custom_css = ["css/custom.css"]
 
 [[menu.main]]
   name = "Seattle Arts and Lectures"
-  url = "/"
+  url = "/tags/seattle-arts-and-lectures"
   parent = "Other Work"
   weight = 10
 

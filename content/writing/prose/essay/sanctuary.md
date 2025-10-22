@@ -29,3 +29,5 @@ featured_image_class = ""
 </p>
 
 ![](/hatich-goose/images/writing/prose/sanctuary.png)
+
+I spend time with my friends (and my comics), instead. 

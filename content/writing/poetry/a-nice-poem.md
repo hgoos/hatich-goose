@@ -1,10 +1,10 @@
 +++
 date = '2025-08-18T11:26:57-07:00'
 draft = false
-title = 'Poetry'
+title = 'Nostalgia of Days'
 featured_image = 'images/writing/poetry/fall-father.jpg'
 +++
-## Nostalgia of Days
+
 Where my father's from it's harvest time
 The orchards rich with bounties fine
 

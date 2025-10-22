@@ -22,10 +22,10 @@ Two lovers in the summer high:
 The Queen Corrinthia of the Bears;
 The Poet Keris of the Isles.
 
-Alice, Alice, Alice
+<em>Alice, Alice, Alice
 Come back to golden warmth
 Alice, Alice, Alice
-Come back unto our arms. 
+Come back unto our arms.</em> 
 
 The Poet sang with honeyed voice,
 His fingers deft could woo the day,
