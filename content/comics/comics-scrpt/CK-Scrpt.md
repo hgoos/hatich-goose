@@ -7,7 +7,7 @@ featured_image = 'images/comics/c-heroim/Ck.heroim.jpg'
 +++
 
 **Notes:** The purpose of this story is to practice comic script formatting and the re-use of panel structures in order to streamline personal comic process. Additionally, since I am a poor colorist, this comic will make use of the gray scale and contrast in order to convey depth and distinction. 
-You can find the comic <a href="/haitch-goose/comics/comics-art/c-k/">here.</a>
+You can find the comic <a href="/hatich-goose/comics/comics-art/c-k/">here.</a>
 
 
 ## Page 1

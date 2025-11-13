@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Poetry on Back to the Archives</title>
+    <title>Poetry on The Archives</title>
     <link>http://localhost:1313/hatich-goose/writing/poetry/</link>
-    <description>Recent content in Poetry on Back to the Archives</description>
+    <description>Recent content in Poetry on The Archives</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 29 Sep 2025 00:00:00 +0000</lastBuildDate>
@@ -244,7 +244,7 @@
       <link>http://localhost:1313/hatich-goose/writing/poetry/compass/</link>
       <pubDate>Fri, 02 Nov 2018 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/hatich-goose/writing/poetry/compass/</guid>
-      <description>&lt;p&gt;My mother is Korean,&lt;br&gt;&#xA;from a small fishing village (not so small now), in South Korea.&lt;br&gt;&#xA;It’s called 퍼 항,&lt;br&gt;&#xA;Pohang&lt;/p&gt;&#xA;&lt;p&gt;She came to America,&lt;br&gt;&#xA;Six years old,&lt;br&gt;&#xA;Wide eyed,&lt;br&gt;&#xA;Youngest of five.&lt;br&gt;&#xA;She couldn’t speak any English that first year.&lt;br&gt;&#xA;Now, 43 years later,&lt;br&gt;&#xA;Korean is barely an echo on her tongue.&lt;br&gt;&#xA;I beg her to teach me 한글,&lt;/p&gt;&#xA;&lt;p&gt;Hangul&lt;/p&gt;&#xA;&lt;p&gt;To teach me the heartbeat tongue of Korean;&lt;br&gt;&#xA;But she knows only enough to speak with 할 머 기,&lt;/p&gt;</description>
+      <description>&lt;p&gt;My mother is Korean,&lt;br&gt;&#xA;from a small fishing village (not so small now), in South Korea.&lt;br&gt;&#xA;It’s called 퍼 항,&lt;/p&gt;&#xA;&lt;p style=&#34;text-align:right;&#34;&gt;&lt;em&gt;&#xD;&#xA;    Pohang&#xD;&#xA;    &lt;/em&gt;&#xD;&#xA;&lt;/p&gt;&#xD;&#xA;&lt;p&gt;She came to America,&lt;br&gt;&#xA;Six years old,&lt;br&gt;&#xA;Wide eyed,&lt;br&gt;&#xA;Youngest of five.&lt;br&gt;&#xA;She couldn’t speak any English that first year.&lt;br&gt;&#xA;Now, 43 years later,&lt;br&gt;&#xA;Korean is barely an echo on her tongue.&lt;br&gt;&#xA;I beg her to teach me 한글,&lt;/p&gt;&#xA;&lt;p style=&#34;text-align:right;&#34;&gt;&lt;em&gt;&#xD;&#xA;    Hangul&#xD;&#xA;    &lt;/em&gt;&#xD;&#xA;&lt;/p&gt;&#xD;&#xA;&lt;p&gt;To teach me the heartbeat tongue of Korean;&lt;br&gt;&#xA;But she knows only enough to speak with 할 머 기,&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -3,7 +3,7 @@ date = '2025-09-03T09:22:57-07:00'
 draft = true
 title = 'About'
 description = "Hi. It's me."
-featured_image = "/hatich-goose/images/foggy-shore.jpg"
+featured_image = "/images/foggy-shore.jpg"
 featured_image_class = "cover bg-bottom"
 cover_dimming_class = "bg-black-60"
 +++

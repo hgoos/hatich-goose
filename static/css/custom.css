@@ -22,10 +22,21 @@ ul li ul li a {
 }
 
 /* Add external link arrows to any navigation links that go outside your site */
-nav a[href^="http"]:after {
+nav a[href^="http"]:not(.ananke-social-link):after {
   content: " ↗";
   font-size: 0.9em;
   margin-left: 0.25em; /* small space between text and arrow */
+}
+
+/* Ensure social links never get arrows */
+.ananke-social-link:after {
+  content: none !important;
+}
+
+/* Remove external link indicators from social icons */
+.ananke-socials a::after,
+.ananke-social-link::after {
+  content: none !important;
 }
 
 /* Defines dropdown class */

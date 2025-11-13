@@ -7,7 +7,7 @@ featured_image = ''
 featured_image_class = ""
 +++
 *The image in this work is in reference to* <a href="https://www.reddit.com/media?url=https%3A%2F%2Fpreview.redd.it%2Fartwork-sanctuary-style-interview-for-a-class-by-me-and-v0-7dfaop410pa91.jpg%3Fwidth%3D640%26crop%3Dsmart%26auto%3Dwebp%26s%3D454d0bb1262b84b28dc6df0607f24b02e613c2e7" target="_blank" rel="noopener noreferrer">Heroes in Crisis #2,</a> *written by Tom King and illustrated by Clay Mann.*
-
+<!--more-->
 ---
 <br><br>
 

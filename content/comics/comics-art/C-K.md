@@ -5,8 +5,9 @@ title = "Cruelty and Kindness"
 tags = ["art", "comics" ]
 featured_image = 'images/heroim/ComicsFont.png'
 +++
-**Notes:** Find the script <a href="/comics/comics-scrpt/ck-scrpt/">here.</a><br><br><br>
+**Notes:** Find the script <a href="/hatich-goose/comics/comics-scrpt/ck-scrpt/">here.</a><br><br><br>
 ![She's ready to put on a show!](/hatich-goose/images/comics/ck/CK1.png)
+<!--more-->
 ![She's ready to put on a show!](/hatich-goose/images/comics/ck/CK2.png)
 ![She's ready to put on a show!](/hatich-goose/images/comics/ck/CK3.png)
 ![She's ready to put on a show!](/hatich-goose/images/comics/ck/CK4.png)

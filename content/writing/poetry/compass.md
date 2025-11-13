@@ -10,7 +10,10 @@ cover_dimming_class = 'bg-black-40'
 My mother is Korean,
 from a small fishing village (not so small now), in South Korea.
 It’s called 퍼 항,
-Pohang 
+<p style="text-align:right;"><em>
+    Pohang
+    </em>
+</p>
 
 She came to America,
 Six years old,
@@ -20,18 +23,24 @@ She couldn’t speak any English that first year.
 Now, 43 years later,
 Korean is barely an echo on her tongue.
 I beg her to teach me 한글,
-
-Hangul
+<p style="text-align:right;"><em>
+    Hangul
+    </em>
+</p>
 
 To teach me the heartbeat tongue of Korean;
 But she knows only enough to speak with 할 머 기,
-
-grandma
+<p style="text-align:right;"><em>
+    grandma
+    </em>
+</p>
 
 in Puyallup,
 And even then, my 엄 마,
-
-mother
+<p style="text-align:right;"><em>
+    mother
+    </em>
+</p>
 
 Stutters and trips
 over the syllables and words.
@@ -47,8 +56,10 @@ My mother is Korean,
 She’s fierce, but gentle,
 Demanding, but forgiving,
 Yet her tongue is a starving 호 랑 이,
-
-tiger
+<p style="text-align:right;"><em>
+    tiger
+    </em>
+</p>
 
 Starving to speak, to remember, to devour aloud,
 The smooth notches and lines,
@@ -59,8 +70,10 @@ But the consonants,
 The lodestone that lies below- has broken;
 Spinning off kilter, disoriented,
 Her 나침반,
-
-compass
+<p style="text-align:right;"><em>
+    compass
+    </em>
+</p>
 
 Has lost its North,
 And though she knows where she came from,
