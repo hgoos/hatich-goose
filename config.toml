@@ -1,12 +1,14 @@
 baseURL = 'https://hgoos.github.io/hatich-goose/'
 languageCode = 'en-us'
-title = 'Back to the Archives'
+title = 'The Archives'
 theme = 'ananke'
 
 [params]
 cover_dimming_class = "bg-dark-green-40"
 body_classses = "avenir bg-dark-green"
 custom_css = ["css/custom.css"]
+github = "https://github.com/hgoos"
+linkedin = "https://linkedin.com/in/helena-goos-29a3232b4"
 
 [taxonomies]
   tag = "tags"
@@ -21,13 +23,15 @@ custom_css = ["css/custom.css"]
 
 
 
-[[params.social]]
-  name = "GitHub"
-  url = "https://github.com/username"
+[params.anake.social]
+  [params.ananke.social.follow]
+    networks = ["github", "linkedin"]
+  
+  [params.ananke.social.github]
+    profilelink = "https://github.com/hgoos"
 
-[[params.social]]
-  name = "Twitter"
-  url = "https://twitter.com/username"
+  [params.ananke.social.linkedin]
+    profilelink = "https://linkedin.com/in/helena-goos-29a3232b4"
 
 
 [[menu.main]]
@@ -89,10 +93,11 @@ custom_css = ["css/custom.css"]
   parent = "Other Work"
   weight = 10
 
+
 [[menu.main]]
   name = "About"
   url = "/about/"
-  weight = 11
+  weight = 12
 
 [caches]
   [caches.images]
