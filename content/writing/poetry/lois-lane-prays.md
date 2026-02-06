@@ -5,7 +5,7 @@ title = 'Untitled Lois Lane'
 tags = [ " " ]
 featured_image = ' '
 featured_image_class = ''
-cover_dimming_class = ' '
+cover_dimming_class = 'bg-black-40'
 +++
 *"Christ, Clark,"* Lois says,
 She’s holding her head in her hands
