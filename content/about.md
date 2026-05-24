@@ -11,7 +11,7 @@ cover_dimming_class = "bg-black-60"
 
 The name's Goos. Helena Goos.
 
-A twenty-two year old from Seattle, Washington, Goos was published at the age of fifteen through Seattle Arts and Lectures. Of course, she got it into her head that she could be a writer. So here she is, regretting not double-majoring in Comp-Sci, publishing and building her own portfolio, looking for a job. 
+A twenty-three year old from Seattle, Washington, Goos was published at the age of fifteen through Seattle Arts and Lectures. Of course, she got it into her head that she could be a writer. So here she is, regretting not double-majoring in Comp-Sci, publishing and building her own portfolio, looking for a job. 
 
 The goal? Write comic scripts that recieve critical acclaim and get her a semi-popular table at Comic-Con. The reality? Shit's tough out here! She's got passion, she's got connections, but she needs experience. 
 
