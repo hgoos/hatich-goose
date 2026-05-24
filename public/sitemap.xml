@@ -2,28 +2,46 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/hatich-goose/writing/poetry/</loc>
+    <lastmod>2026-02-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/hatich-goose/</loc>
+    <lastmod>2026-02-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/hatich-goose/writing/poetry/lois-lane-prays/</loc>
+    <lastmod>2026-02-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/hatich-goose/writing/</loc>
+    <lastmod>2026-02-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/hatich-goose/tags/marie-ivwa/</loc>
+    <lastmod>2026-02-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/hatich-goose/tags/part-i-the-refugee/</loc>
+    <lastmod>2026-02-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/hatich-goose/writing/prose/</loc>
+    <lastmod>2026-02-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/hatich-goose/tags/short-stories/</loc>
+    <lastmod>2026-02-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/hatich-goose/tags/</loc>
+    <lastmod>2026-02-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/hatich-goose/writing/prose/shrtstories/talesofmarieivwa/riptide/</loc>
+    <lastmod>2026-02-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/hatich-goose/tags/kersian-sonnets/</loc>
     <lastmod>2025-09-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/hatich-goose/writing/poetry/</loc>
-    <lastmod>2025-09-29T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/hatich-goose/tags/sonnets/</loc>
-    <lastmod>2025-09-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/hatich-goose/tags/</loc>
-    <lastmod>2025-09-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/hatich-goose/</loc>
     <lastmod>2025-09-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/hatich-goose/writing/poetry/sonnets/keris/1alis/</loc>
     <lastmod>2025-09-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/hatich-goose/tags/this-fluttering-ember/</loc>
-    <lastmod>2025-09-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/hatich-goose/writing/</loc>
     <lastmod>2025-09-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/hatich-goose/writing/poetry/amsent/childhood/</loc>
@@ -152,14 +170,17 @@
     <loc>http://localhost:1313/hatich-goose/writing/poetry/sonnets/ember/thesun/</loc>
     <lastmod>2024-06-06T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/hatich-goose/writing/prose/shrtstories/talesofmarieivwa/castle-caldera/</loc>
+    <lastmod>2024-04-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/hatich-goose/tags/part-iii-the-burning-city/</loc>
+    <lastmod>2024-04-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/hatich-goose/writing/prose/shrtstories/talesofmarieivwa/jean-and-esther/</loc>
+    <lastmod>2024-04-23T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/hatich-goose/writing/poetry/sonnets/keris/sf_snt1/</loc>
     <lastmod>2024-02-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/hatich-goose/writing/prose/</loc>
-    <lastmod>2024-01-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/hatich-goose/tags/short-stories/</loc>
-    <lastmod>2024-01-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/hatich-goose/writing/prose/shrtstories/thedeep/</loc>
     <lastmod>2024-01-03T00:00:00+00:00</lastmod>

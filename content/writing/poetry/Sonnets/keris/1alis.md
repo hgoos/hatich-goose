@@ -42,10 +42,10 @@ In halls enrobed and decked in mirth,
 The Poet, Queen, and Lakeshore heir
 Found of love they had no dearth. 
 
-Alice, Alice, Alice
+<em>Alice, Alice, Alice
 Come back to golden warmth
 Alice, Alice, Alice
-Come back unto our arms. 
+Come back unto our arms.</em> 
 
 But peace like summer, never lasts
 And Autumn reached her father’s court
@@ -62,10 +62,10 @@ The land around began to turn
 From Autumn brisk to Winter deep
 The lake’s dark waters ‘came frozen o’er.
 
-Alice, Alice, Alice,
+<em>Alice, Alice, Alice
 Come back to golden warmth
-Alice, Alice, Alice,
-Come back unto our arms. 
+Alice, Alice, Alice
+Come back unto our arms.</em> 
 
 No longer did the flame-haired maid
 Laugh at the songs her Poet played
@@ -77,17 +77,17 @@ Could not save Alice from her grief
 And so like Autumn yields to Winter
 They watched their Alice yield to her grief. 
 
-Alice, Alice, Alice,
+<em>Alice, Alice, Alice
 Come back to golden warmth
-Alice, Alice, Alice 
-Come back unto our arms. 
+Alice, Alice, Alice
+Come back unto our arms.</em> 
 
 And so beneath the lake she sleeps,
 In icy depths of blue and white
 Above the Poet and Bear Queen weep,
 For the wint’ry sorrow that took her life.
 
-O’ Alice, Alice, Alice, 
+<em>lice, Alice, Alice, 
 Come back to golden warmth,
 O’ Alice, Alice, Alice,
-Come back unto our arms.
+Come back unto our arms.</em>

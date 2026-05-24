@@ -2,8 +2,8 @@
 date = '2026-02-06'
 draft = false
 title = 'Untitled Lois Lane'
-tags = [ " " ]
-featured_image = ' '
+tags = [ "" ]
+featured_image = ''
 featured_image_class = ''
 cover_dimming_class = 'bg-black-40'
 +++
