@@ -3,7 +3,7 @@ languageCode = 'en-us'
 title = 'The Archives'
 theme = 'ananke'
 
-[params]
+[params.anake]
 cover_dimming_class = "bg-dark-green-40"
 body_classses = "avenir bg-dark-green"
 custom_css = ["css/custom.css"]
