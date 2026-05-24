@@ -1,7 +1,7 @@
 +++
 date = '2026-03-27'
 draft = false
-title = 'The Body of an American / Death Wish'
+title = 'Sticks and Stones'
 tags = ["sonnets", "this fluttering ember" ]
 featured_image = ''
 featured_image_class = 'cover'
