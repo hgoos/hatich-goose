@@ -18,5 +18,5 @@ For when you write or read so well
 It’s awe that you might hear
 For folks don’t seem to grasp the truth
 Of learning without fear. 
-<span style="margin-left:2.5em;">For just as iron horses ride by complex gears and heat</spam>
-<span style="margin-left:2.5em;">So too to wield your tongue like knives is its own grand feat.<span>
+<span style="margin-left:2.5em;">For just as iron horses ride by complex gears and heat</span>
+<span style="margin-left:2.5em;">So too to wield your tongue like knives is its own grand feat.</span>
