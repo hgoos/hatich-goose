@@ -1,54 +1,59 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Short Stories on The Archives</title>
-    <link>http://localhost:1313/hatich-goose/tags/short-stories/</link>
-    <description>Recent content in Short Stories on The Archives</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sun, 01 Feb 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/hatich-goose/tags/short-stories/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>The Riptide</title>
-      <link>http://localhost:1313/hatich-goose/writing/prose/shrtstories/talesofmarieivwa/riptide/</link>
-      <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hatich-goose/writing/prose/shrtstories/talesofmarieivwa/riptide/</guid>
-      <description>&lt;p&gt;&lt;em&gt;I can’t remember learning to swim.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;This, of course, is unsurprising, given my upbringing. The Second Sea was but a stone’s throw away from the outermost walls of my mother’s castle. I grew my days with fishermen’s children, swimming and harpooning and getting sucked out to sea by the currents.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;I was six years old when the first riptide took me.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;I was a strong swimmer, even then, but being so young, I panicked, suddenly forgetting the words that had been hammered into me since I was old enough to walk. “If a current takes you, swim in tandem with the shore.” How many had said this to me? My father, my mother, my brother, the fishermen at the dock who feared what would happen if their liege lady’s daughter drowned on their watch.&lt;/em&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Castle Caldera or The Watersnake and the Reed Grass</title>
-      <link>http://localhost:1313/hatich-goose/writing/prose/shrtstories/talesofmarieivwa/castle-caldera/</link>
-      <pubDate>Tue, 23 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hatich-goose/writing/prose/shrtstories/talesofmarieivwa/castle-caldera/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Water in the Desert or Why the Laughing Dog Laughs</title>
-      <link>http://localhost:1313/hatich-goose/writing/prose/shrtstories/talesofmarieivwa/jean-and-esther/</link>
-      <pubDate>Tue, 23 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hatich-goose/writing/prose/shrtstories/talesofmarieivwa/jean-and-esther/</guid>
-      <description>&lt;p&gt;The carrion birds were circling as Marie struggled to walk upright in the loose sand.&lt;/p&gt;&#xA;&lt;p&gt;Far on the northstearn horizon, a hazy shadow in the distance, the Lontaigne Mountains loomed. She glanced at the birds above. They think me a meal already. They will be disappointed. She knew that this line of thinking was futile, but it was all she had.&lt;/p&gt;&#xA;&lt;p&gt;Her water had run out a day ago. A day? Perhaps it had been two. She no longer could conceptualize time under the scorching heat of the Western sun.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>The Deep; it Beckons</title>
-      <link>http://localhost:1313/hatich-goose/writing/prose/shrtstories/thedeep/</link>
-      <pubDate>Wed, 03 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hatich-goose/writing/prose/shrtstories/thedeep/</guid>
-      <description>&lt;p&gt;The beach glows tonight. It’s a soft glow, a murmuration of light.&lt;/p&gt;&#xA;&lt;p&gt;It’s not anything spectacular, but everything has that moonshine sheen to it. The moon hangs there in the sky, a quarter past her zenith, like some silver-glass fishing float adrift in a midnight sea.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Plastic, Bone, Bisque</title>
-      <link>http://localhost:1313/hatich-goose/writing/prose/shrtstories/pbb/</link>
-      <pubDate>Tue, 29 Mar 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hatich-goose/writing/prose/shrtstories/pbb/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;A note for those not familiar with clay:&lt;/strong&gt;&lt;br&gt;&#xA;*Clay can be virtually recycled throughout its lifetime in a studio, up until the point where it goes through its first firing in a kiln. Clay goes through three stages in studio: plastic (at its softest and most pliable), leather hard (still pliable but much stiffer and harder to work with), and bone-dry (virtually all the water inside the clay has evaporated and you are left with a rather fragile, brittle material).&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Inexhaustible Abundance</title>
-      <link>http://localhost:1313/hatich-goose/writing/prose/shrtstories/abundance/</link>
-      <pubDate>Wed, 27 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hatich-goose/writing/prose/shrtstories/abundance/</guid>
-      <description>&lt;p&gt;Sarah walked across the barren earthscape, oxygen mask covering her face, goggles fogging as she exhaled. It was spring, (according to the calendar in the bunker) but the sky was still choked with the dust and smog of everything. Watery sun filtered through the particulates, illuminating the landscape in a cream-colored light.&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Short Stories on The Archives</title>
+		<link>http://localhost:1313/hatich-goose/tags/short-stories/</link>
+		<description>Recent content in Short Stories on The Archives</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Sun, 01 Feb 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/hatich-goose/tags/short-stories/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>The Riptide</title>
+				<link>http://localhost:1313/hatich-goose/writing/prose/shrtstories/talesofmarieivwa/riptide/</link>
+				<pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/hatich-goose/writing/prose/shrtstories/talesofmarieivwa/riptide/</guid>
+				<description>&lt;p&gt;&lt;em&gt;I can’t remember learning to swim.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;This, of course, is unsurprising, given my upbringing. The Second Sea was but a stone’s throw away from the outermost walls of my mother’s castle. I grew my days with fishermen’s children, swimming and harpooning and getting sucked out to sea by the currents.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;I was six years old when the first riptide took me.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;I was a strong swimmer, even then, but being so young, I panicked, suddenly forgetting the words that had been hammered into me since I was old enough to walk. “If a current takes you, swim in tandem with the shore.” How many had said this to me? My father, my mother, my brother, the fishermen at the dock who feared what would happen if their liege lady’s daughter drowned on their watch.&lt;/em&gt;&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Castle Caldera or The Watersnake and the Reed Grass</title>
+				<link>http://localhost:1313/hatich-goose/writing/prose/shrtstories/talesofmarieivwa/castle-caldera/</link>
+				<pubDate>Tue, 23 Apr 2024 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/hatich-goose/writing/prose/shrtstories/talesofmarieivwa/castle-caldera/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Water in the Desert or Why the Laughing Dog Laughs</title>
+				<link>http://localhost:1313/hatich-goose/writing/prose/shrtstories/talesofmarieivwa/jean-and-esther/</link>
+				<pubDate>Tue, 23 Apr 2024 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/hatich-goose/writing/prose/shrtstories/talesofmarieivwa/jean-and-esther/</guid>
+				<description>&lt;p&gt;The carrion birds were circling as Marie struggled to walk upright in the loose sand.&lt;/p&gt;&#xA;&lt;p&gt;Far on the northstearn horizon, a hazy shadow in the distance, the Lontaigne Mountains loomed. She glanced at the birds above. &lt;em&gt;They think me a meal already. They will be disappointed.&lt;/em&gt; She knew that this line of thinking was futile, but it was all she had.&lt;/p&gt;&#xA;&lt;p&gt;Her water had run out a day ago. A day? Perhaps it had been two. She no longer could conceptualize time under the scorching heat of the Western sun.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>The Deep; it Beckons</title>
+				<link>http://localhost:1313/hatich-goose/writing/prose/shrtstories/thedeep/</link>
+				<pubDate>Wed, 03 Jan 2024 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/hatich-goose/writing/prose/shrtstories/thedeep/</guid>
+				<description>&lt;p&gt;The beach glows tonight. It’s a soft glow, a murmuration of light.&lt;/p&gt;&#xA;&lt;p&gt;It’s not anything spectacular, but everything has that moonshine sheen to it. The moon hangs there in the sky, a quarter past her zenith, like some silver-glass fishing float adrift in a midnight sea.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Plastic, Bone, Bisque</title>
+				<link>http://localhost:1313/hatich-goose/writing/prose/shrtstories/pbb/</link>
+				<pubDate>Tue, 29 Mar 2022 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/hatich-goose/writing/prose/shrtstories/pbb/</guid>
+				<description>&lt;p&gt;&lt;strong&gt;A note for those not familiar with clay:&lt;/strong&gt;&lt;br&gt;&#xA;*Clay can be virtually recycled throughout its lifetime in a studio, up until the point where it goes through its first firing in a kiln. Clay goes through three stages in studio: plastic (at its softest and most pliable), leather hard (still pliable but much stiffer and harder to work with), and bone-dry (virtually all the water inside the clay has evaporated and you are left with a rather fragile, brittle material).&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Inexhaustible Abundance</title>
+				<link>http://localhost:1313/hatich-goose/writing/prose/shrtstories/abundance/</link>
+				<pubDate>Wed, 27 Feb 2019 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/hatich-goose/writing/prose/shrtstories/abundance/</guid>
+				<description>&lt;p&gt;Sarah walked across the barren earthscape, oxygen mask covering her face, goggles fogging as she exhaled. It was spring, (according to the calendar in the bunker) but the sky was still choked with the dust and smog of everything. Watery sun filtered through the particulates, illuminating the landscape in a cream-colored light.&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

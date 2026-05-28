@@ -1,11 +1,11 @@
 /* Hide dropdowns by default */
-ul li ul {
+ul li ul:not(.dropdown-menu) {
   display: none;
 }
 
 /* Show dropdown when hovering over parent */
-ul li:hover > ul {
-  display: block;
+li.dropdown:hover ul.dropdown-menu {
+  display: block !important;
 }
 
 /* Optional styling tweaks */
@@ -25,7 +25,7 @@ ul li ul li a {
 nav a[href^="http"]:not(.ananke-social-link):after {
   content: " ↗";
   font-size: 0.9em;
-  margin-left: 0.25em; /* small space between text and arrow */
+  margin-left: 0.25em;
 }
 
 /* Ensure social links never get arrows */
@@ -37,21 +37,4 @@ nav a[href^="http"]:not(.ananke-social-link):after {
 .ananke-socials a::after,
 .ananke-social-link::after {
   content: none !important;
-}
-
-/* Defines dropdown class */
-li.dropdown:hover ul.dropdown-menu {
-    display: block !important;
-}
-
-/*.center-text {
-  text-align: center;
-}
-
-.right-text {
-  text-align: right;
-}
-
-.left-text {
-  text-align: left;
 }

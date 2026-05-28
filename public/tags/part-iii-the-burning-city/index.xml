@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Part III: The Burning City on The Archives</title>
-    <link>http://localhost:1313/hatich-goose/tags/part-iii-the-burning-city/</link>
-    <description>Recent content in Part III: The Burning City on The Archives</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 23 Apr 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/hatich-goose/tags/part-iii-the-burning-city/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Water in the Desert or Why the Laughing Dog Laughs</title>
-      <link>http://localhost:1313/hatich-goose/writing/prose/shrtstories/talesofmarieivwa/jean-and-esther/</link>
-      <pubDate>Tue, 23 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hatich-goose/writing/prose/shrtstories/talesofmarieivwa/jean-and-esther/</guid>
-      <description>&lt;p&gt;The carrion birds were circling as Marie struggled to walk upright in the loose sand.&lt;/p&gt;&#xA;&lt;p&gt;Far on the northstearn horizon, a hazy shadow in the distance, the Lontaigne Mountains loomed. She glanced at the birds above. They think me a meal already. They will be disappointed. She knew that this line of thinking was futile, but it was all she had.&lt;/p&gt;&#xA;&lt;p&gt;Her water had run out a day ago. A day? Perhaps it had been two. She no longer could conceptualize time under the scorching heat of the Western sun.&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Part III: The Burning City on The Archives</title>
+		<link>http://localhost:1313/hatich-goose/tags/part-iii-the-burning-city/</link>
+		<description>Recent content in Part III: The Burning City on The Archives</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Tue, 23 Apr 2024 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/hatich-goose/tags/part-iii-the-burning-city/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Water in the Desert or Why the Laughing Dog Laughs</title>
+				<link>http://localhost:1313/hatich-goose/writing/prose/shrtstories/talesofmarieivwa/jean-and-esther/</link>
+				<pubDate>Tue, 23 Apr 2024 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/hatich-goose/writing/prose/shrtstories/talesofmarieivwa/jean-and-esther/</guid>
+				<description>&lt;p&gt;The carrion birds were circling as Marie struggled to walk upright in the loose sand.&lt;/p&gt;&#xA;&lt;p&gt;Far on the northstearn horizon, a hazy shadow in the distance, the Lontaigne Mountains loomed. She glanced at the birds above. &lt;em&gt;They think me a meal already. They will be disappointed.&lt;/em&gt; She knew that this line of thinking was futile, but it was all she had.&lt;/p&gt;&#xA;&lt;p&gt;Her water had run out a day ago. A day? Perhaps it had been two. She no longer could conceptualize time under the scorching heat of the Western sun.&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

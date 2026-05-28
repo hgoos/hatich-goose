@@ -1,33 +1,38 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Seattle Arts and Lectures on The Archives</title>
-    <link>http://localhost:1313/hatich-goose/tags/seattle-arts-and-lectures/</link>
-    <description>Recent content in Seattle Arts and Lectures on The Archives</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 09 Nov 2020 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/hatich-goose/tags/seattle-arts-and-lectures/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>And They Do</title>
-      <link>http://localhost:1313/hatich-goose/writing/poetry/theydo/</link>
-      <pubDate>Mon, 09 Nov 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hatich-goose/writing/poetry/theydo/</guid>
-      <description>&lt;p&gt;The silence stretches,&lt;br&gt;&#xA;yawning across the land.&lt;br&gt;&#xA;Quiet, so quiet.&lt;br&gt;&#xA;A strange reverie, unbroken by sound.&lt;br&gt;&#xA;The bombs have stopped.&lt;br&gt;&#xA;The children, born in a world where&lt;br&gt;&#xA;the thunder is a part of life,&lt;br&gt;&#xA;whimper.&lt;br&gt;&#xA;The elders,&lt;br&gt;&#xA;so few,&lt;br&gt;&#xA;so old,&lt;br&gt;&#xA;raise their heads in disbelief.&lt;br&gt;&#xA;For they remember,&lt;br&gt;&#xA;a time when bombs did not fall,&lt;br&gt;&#xA;when the earth did not shake,&lt;br&gt;&#xA;when birds sang and life went on,&lt;br&gt;&#xA;undisturbed by the screams of fighter jets and families.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Inexhaustible Abundance</title>
-      <link>http://localhost:1313/hatich-goose/writing/prose/shrtstories/abundance/</link>
-      <pubDate>Wed, 27 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hatich-goose/writing/prose/shrtstories/abundance/</guid>
-      <description>&lt;p&gt;Sarah walked across the barren earthscape, oxygen mask covering her face, goggles fogging as she exhaled. It was spring, (according to the calendar in the bunker) but the sky was still choked with the dust and smog of everything. Watery sun filtered through the particulates, illuminating the landscape in a cream-colored light.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Compass that Points Her Home</title>
-      <link>http://localhost:1313/hatich-goose/writing/poetry/compass/</link>
-      <pubDate>Fri, 02 Nov 2018 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hatich-goose/writing/poetry/compass/</guid>
-      <description>&lt;p&gt;My mother is Korean,&lt;br&gt;&#xA;from a small fishing village (not so small now), in South Korea.&lt;br&gt;&#xA;It’s called 퍼 항,&lt;/p&gt;&#xA;&lt;p style=&#34;text-align:right;&#34;&gt;&lt;em&gt;&#xD;&#xA;    Pohang&#xD;&#xA;    &lt;/em&gt;&#xD;&#xA;&lt;/p&gt;&#xD;&#xA;&lt;p&gt;She came to America,&lt;br&gt;&#xA;Six years old,&lt;br&gt;&#xA;Wide eyed,&lt;br&gt;&#xA;Youngest of five.&lt;br&gt;&#xA;She couldn’t speak any English that first year.&lt;br&gt;&#xA;Now, 43 years later,&lt;br&gt;&#xA;Korean is barely an echo on her tongue.&lt;br&gt;&#xA;I beg her to teach me 한글,&lt;/p&gt;&#xA;&lt;p style=&#34;text-align:right;&#34;&gt;&lt;em&gt;&#xD;&#xA;    Hangul&#xD;&#xA;    &lt;/em&gt;&#xD;&#xA;&lt;/p&gt;&#xD;&#xA;&lt;p&gt;To teach me the heartbeat tongue of Korean;&lt;br&gt;&#xA;But she knows only enough to speak with 할 머 기,&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Seattle Arts and Lectures on The Archives</title>
+		<link>http://localhost:1313/hatich-goose/tags/seattle-arts-and-lectures/</link>
+		<description>Recent content in Seattle Arts and Lectures on The Archives</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Mon, 09 Nov 2020 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/hatich-goose/tags/seattle-arts-and-lectures/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>And They Do</title>
+				<link>http://localhost:1313/hatich-goose/writing/poetry/theydo/</link>
+				<pubDate>Mon, 09 Nov 2020 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/hatich-goose/writing/poetry/theydo/</guid>
+				<description>&lt;p&gt;The silence stretches,&lt;br&gt;&#xA;yawning across the land.&lt;br&gt;&#xA;Quiet, so quiet.&lt;br&gt;&#xA;A strange reverie, unbroken by sound.&lt;br&gt;&#xA;The bombs have stopped.&lt;br&gt;&#xA;The children, born in a world where&lt;br&gt;&#xA;the thunder is a part of life,&lt;br&gt;&#xA;whimper.&lt;br&gt;&#xA;The elders,&lt;br&gt;&#xA;so few,&lt;br&gt;&#xA;so old,&lt;br&gt;&#xA;raise their heads in disbelief.&lt;br&gt;&#xA;For they remember,&lt;br&gt;&#xA;a time when bombs did not fall,&lt;br&gt;&#xA;when the earth did not shake,&lt;br&gt;&#xA;when birds sang and life went on,&lt;br&gt;&#xA;undisturbed by the screams of fighter jets and families.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Inexhaustible Abundance</title>
+				<link>http://localhost:1313/hatich-goose/writing/prose/shrtstories/abundance/</link>
+				<pubDate>Wed, 27 Feb 2019 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/hatich-goose/writing/prose/shrtstories/abundance/</guid>
+				<description>&lt;p&gt;Sarah walked across the barren earthscape, oxygen mask covering her face, goggles fogging as she exhaled. It was spring, (according to the calendar in the bunker) but the sky was still choked with the dust and smog of everything. Watery sun filtered through the particulates, illuminating the landscape in a cream-colored light.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Compass that Points Her Home</title>
+				<link>http://localhost:1313/hatich-goose/writing/poetry/compass/</link>
+				<pubDate>Fri, 02 Nov 2018 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/hatich-goose/writing/poetry/compass/</guid>
+				<description>&lt;p&gt;My mother is Korean,&lt;br&gt;&#xA;from a small fishing village (not so small now), in South Korea.&lt;br&gt;&#xA;It’s called 퍼 항,&lt;/p&gt;&#xA;&lt;p style=&#34;text-align:right;&#34;&gt;&lt;em&gt;&#xD;&#xA;    Pohang&#xD;&#xA;    &lt;/em&gt;&#xD;&#xA;&lt;/p&gt;&#xD;&#xA;&lt;p&gt;She came to America,&lt;br&gt;&#xA;Six years old,&lt;br&gt;&#xA;Wide eyed,&lt;br&gt;&#xA;Youngest of five.&lt;br&gt;&#xA;She couldn’t speak any English that first year.&lt;br&gt;&#xA;Now, 43 years later,&lt;br&gt;&#xA;Korean is barely an echo on her tongue.&lt;br&gt;&#xA;I beg her to teach me 한글,&lt;/p&gt;&#xA;&lt;p style=&#34;text-align:right;&#34;&gt;&lt;em&gt;&#xD;&#xA;    Hangul&#xD;&#xA;    &lt;/em&gt;&#xD;&#xA;&lt;/p&gt;&#xD;&#xA;&lt;p&gt;To teach me the heartbeat tongue of Korean;&lt;br&gt;&#xA;But she knows only enough to speak with 할 머 기,&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

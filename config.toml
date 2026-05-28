@@ -3,10 +3,12 @@ languageCode = 'en-us'
 title = 'The Archives'
 theme = 'ananke'
 
+[params]
+custom_css = ["css/custom.css"]
+
 [params.anake]
 cover_dimming_class = "bg-dark-green-40"
 body_classses = "avenir bg-dark-green"
-custom_css = ["css/custom.css"]
 github = "https://github.com/hgoos"
 linkedin = "https://linkedin.com/in/helena-goos-29a3232b4"
 

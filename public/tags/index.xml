@@ -1,124 +1,129 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Tags on The Archives</title>
-    <link>http://localhost:1313/hatich-goose/tags/</link>
-    <description>Recent content in Tags on The Archives</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sun, 01 Feb 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/hatich-goose/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Marie Ivwa</title>
-      <link>http://localhost:1313/hatich-goose/tags/marie-ivwa/</link>
-      <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hatich-goose/tags/marie-ivwa/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Part I: The Refugee</title>
-      <link>http://localhost:1313/hatich-goose/tags/part-i-the-refugee/</link>
-      <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hatich-goose/tags/part-i-the-refugee/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Short Stories</title>
-      <link>http://localhost:1313/hatich-goose/tags/short-stories/</link>
-      <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hatich-goose/tags/short-stories/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Kersian Sonnets</title>
-      <link>http://localhost:1313/hatich-goose/tags/kersian-sonnets/</link>
-      <pubDate>Mon, 29 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hatich-goose/tags/kersian-sonnets/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Sonnets</title>
-      <link>http://localhost:1313/hatich-goose/tags/sonnets/</link>
-      <pubDate>Mon, 29 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hatich-goose/tags/sonnets/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>This Fluttering Ember</title>
-      <link>http://localhost:1313/hatich-goose/tags/this-fluttering-ember/</link>
-      <pubDate>Mon, 29 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hatich-goose/tags/this-fluttering-ember/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>American Sentences</title>
-      <link>http://localhost:1313/hatich-goose/tags/american-sentences/</link>
-      <pubDate>Thu, 18 Sep 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hatich-goose/tags/american-sentences/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Art</title>
-      <link>http://localhost:1313/hatich-goose/tags/art/</link>
-      <pubDate>Wed, 03 Sep 2025 10:12:59 -0700</pubDate>
-      <guid>http://localhost:1313/hatich-goose/tags/art/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Comics</title>
-      <link>http://localhost:1313/hatich-goose/tags/comics/</link>
-      <pubDate>Wed, 03 Sep 2025 10:12:59 -0700</pubDate>
-      <guid>http://localhost:1313/hatich-goose/tags/comics/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Faith &amp; Religion</title>
-      <link>http://localhost:1313/hatich-goose/tags/faith--religion/</link>
-      <pubDate>Sun, 31 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hatich-goose/tags/faith--religion/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>The Dreams of Pontius Pilate</title>
-      <link>http://localhost:1313/hatich-goose/tags/the-dreams-of-pontius-pilate/</link>
-      <pubDate>Tue, 22 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hatich-goose/tags/the-dreams-of-pontius-pilate/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Bible Sonnets</title>
-      <link>http://localhost:1313/hatich-goose/tags/bible-sonnets/</link>
-      <pubDate>Mon, 25 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hatich-goose/tags/bible-sonnets/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Part III: The Burning City</title>
-      <link>http://localhost:1313/hatich-goose/tags/part-iii-the-burning-city/</link>
-      <pubDate>Tue, 23 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hatich-goose/tags/part-iii-the-burning-city/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Comic Scripts</title>
-      <link>http://localhost:1313/hatich-goose/tags/comic-scripts/</link>
-      <pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hatich-goose/tags/comic-scripts/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Essays</title>
-      <link>http://localhost:1313/hatich-goose/tags/essays/</link>
-      <pubDate>Wed, 04 May 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hatich-goose/tags/essays/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Seattle Arts and Lectures</title>
-      <link>http://localhost:1313/hatich-goose/tags/seattle-arts-and-lectures/</link>
-      <pubDate>Mon, 09 Nov 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hatich-goose/tags/seattle-arts-and-lectures/</guid>
-      <description></description>
-    </item>
-  </channel>
+	<channel>
+		<title>Tags on The Archives</title>
+		<link>http://localhost:1313/hatich-goose/tags/</link>
+		<description>Recent content in Tags on The Archives</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Fri, 27 Mar 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/hatich-goose/tags/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Sonnets</title>
+				<link>http://localhost:1313/hatich-goose/tags/sonnets/</link>
+				<pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/hatich-goose/tags/sonnets/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>This Fluttering Ember</title>
+				<link>http://localhost:1313/hatich-goose/tags/this-fluttering-ember/</link>
+				<pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/hatich-goose/tags/this-fluttering-ember/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Marie Ivwa</title>
+				<link>http://localhost:1313/hatich-goose/tags/marie-ivwa/</link>
+				<pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/hatich-goose/tags/marie-ivwa/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Part I: The Refugee</title>
+				<link>http://localhost:1313/hatich-goose/tags/part-i-the-refugee/</link>
+				<pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/hatich-goose/tags/part-i-the-refugee/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Short Stories</title>
+				<link>http://localhost:1313/hatich-goose/tags/short-stories/</link>
+				<pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/hatich-goose/tags/short-stories/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Kersian Sonnets</title>
+				<link>http://localhost:1313/hatich-goose/tags/kersian-sonnets/</link>
+				<pubDate>Mon, 29 Sep 2025 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/hatich-goose/tags/kersian-sonnets/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>American Sentences</title>
+				<link>http://localhost:1313/hatich-goose/tags/american-sentences/</link>
+				<pubDate>Thu, 18 Sep 2025 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/hatich-goose/tags/american-sentences/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Art</title>
+				<link>http://localhost:1313/hatich-goose/tags/art/</link>
+				<pubDate>Wed, 03 Sep 2025 10:12:59 -0700</pubDate>
+				<guid>http://localhost:1313/hatich-goose/tags/art/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Comics</title>
+				<link>http://localhost:1313/hatich-goose/tags/comics/</link>
+				<pubDate>Wed, 03 Sep 2025 10:12:59 -0700</pubDate>
+				<guid>http://localhost:1313/hatich-goose/tags/comics/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Faith &amp; Religion</title>
+				<link>http://localhost:1313/hatich-goose/tags/faith--religion/</link>
+				<pubDate>Sun, 31 Aug 2025 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/hatich-goose/tags/faith--religion/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>The Dreams of Pontius Pilate</title>
+				<link>http://localhost:1313/hatich-goose/tags/the-dreams-of-pontius-pilate/</link>
+				<pubDate>Tue, 22 Apr 2025 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/hatich-goose/tags/the-dreams-of-pontius-pilate/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Bible Sonnets</title>
+				<link>http://localhost:1313/hatich-goose/tags/bible-sonnets/</link>
+				<pubDate>Mon, 25 Nov 2024 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/hatich-goose/tags/bible-sonnets/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Part III: The Burning City</title>
+				<link>http://localhost:1313/hatich-goose/tags/part-iii-the-burning-city/</link>
+				<pubDate>Tue, 23 Apr 2024 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/hatich-goose/tags/part-iii-the-burning-city/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Comic Scripts</title>
+				<link>http://localhost:1313/hatich-goose/tags/comic-scripts/</link>
+				<pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/hatich-goose/tags/comic-scripts/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Essays</title>
+				<link>http://localhost:1313/hatich-goose/tags/essays/</link>
+				<pubDate>Wed, 04 May 2022 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/hatich-goose/tags/essays/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Seattle Arts and Lectures</title>
+				<link>http://localhost:1313/hatich-goose/tags/seattle-arts-and-lectures/</link>
+				<pubDate>Mon, 09 Nov 2020 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/hatich-goose/tags/seattle-arts-and-lectures/</guid>
+				<description></description>
+			</item>
+	</channel>
 </rss>
