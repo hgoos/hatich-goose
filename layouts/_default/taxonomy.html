@@ -1,7 +1,7 @@
 {{ define "header" }}
   {{ $tagName := .Title }}
   {{ $tagKey := urlize $tagName }}
-  {{ $tagData := index .Site.Data.tags $tagKey }}
+  {{ $tagData := index hugo.Data.tags $tagKey }}
  
   {{ if $tagData.featured_image }}
     {{/* Use featured image with Ananke's styling */}}

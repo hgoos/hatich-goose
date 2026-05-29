@@ -1,10 +1,10 @@
 /* Hide dropdowns by default */
-ul li ul:not(.dropdown-menu) {
-  display: none;
+.dropdown-menu {
+  display: none !important;
 }
 
 /* Show dropdown when hovering over parent */
-li.dropdown:hover ul.dropdown-menu {
+.dropdown:hover .dropdown-menu {
   display: block !important;
 }
 

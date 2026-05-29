@@ -10,9 +10,16 @@
 		
 		
 		
-			<lastBuildDate>Mon, 20 Feb 2023 00:00:00 +0000</lastBuildDate>
+			<lastBuildDate>Fri, 10 Jan 2025 00:00:00 +0000</lastBuildDate>
 		
 			<atom:link href="http://localhost:1313/hatich-goose/tags/comic-scripts/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>I Hear Them All</title>
+				<link>http://localhost:1313/hatich-goose/comics/comics-scrpt/eyehearthemall/</link>
+				<pubDate>Fri, 10 Jan 2025 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/hatich-goose/comics/comics-scrpt/eyehearthemall/</guid>
+				<description>&lt;p&gt;&lt;strong&gt;Notes:&lt;/strong&gt; Inspired by the song, &amp;ldquo;I Hear Them All&amp;rdquo; by Old Crow Medicine Show. Check it out &lt;a href=&#34;https://www.youtube.com/watch?v=l2VonU4siBE&#34;&gt;here.&lt;/a&gt;&lt;/p&gt;</description>
+			</item>
 			<item>
 				<title>Crisis of Faith</title>
 				<link>http://localhost:1313/hatich-goose/comics/comics-scrpt/faith-scrpt/</link>

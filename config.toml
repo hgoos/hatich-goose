@@ -1,10 +1,8 @@
 baseURL = 'https://hgoos.github.io/hatich-goose/'
-languageCode = 'en-us'
+locale = 'en-us'
 title = 'The Archives'
 theme = 'ananke'
 
-[params]
-custom_css = ["css/custom.css"]
 
 [params.anake]
 cover_dimming_class = "bg-dark-green-40"

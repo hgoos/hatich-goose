@@ -4,7 +4,7 @@ draft = false
 title = 'Faith Sonnet'
 tags = ["sonnets", "This Fluttering Ember", "faith & religion" ]
 featured_image = ''
-featured_image_class = ''
+featured_image_class = 'contain'
 +++
 <span style="color:#ff2400"><em>Faith is like a mustard seed</em></span>
 I’s told when I was young. 

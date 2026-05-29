@@ -3,8 +3,8 @@ date = '2026-03-27'
 draft = false
 title = 'Sticks and Stones'
 tags = ["sonnets", "this fluttering ember" ]
-featured_image = ''
-featured_image_class = 'cover'
+featured_image = 'images/writing/poetry/ember/stcksNstones.png'
+featured_image_class = 'contain'
 +++
 I wield my weapons like my words 
 As sharp as scalpel’s edge
