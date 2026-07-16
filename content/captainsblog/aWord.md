@@ -1,5 +1,4 @@
 +++
-date = '2026-07-14'
 draft = false
 title = "A Word From the Author"
 tags = []
