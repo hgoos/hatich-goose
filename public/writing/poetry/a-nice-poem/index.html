@@ -27,8 +27,77 @@ But I&rsquo;m still getting older.">
     
 
     <link rel="stylesheet" href="/hatich-goose/ananke/css/main.css">
-    
+    <script>
+  (function () {
+    "use strict";
 
+    
+    
+    function revealButtons() {
+      var buttons = document.querySelectorAll(".code-block .code-copy[hidden]");
+      for (var i = 0; i < buttons.length; i++) {
+        buttons[i].hidden = false;
+      }
+    }
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", revealButtons);
+    } else {
+      revealButtons();
+    }
+
+    function flash(button) {
+      var label = button.querySelector(".code-copy-label");
+      var previous = label ? label.textContent : null;
+      button.classList.add("is-copied");
+      if (label) label.textContent = "Copied";
+      window.setTimeout(function () {
+        button.classList.remove("is-copied");
+        if (label && previous !== null) label.textContent = previous;
+      }, 2000);
+    }
+
+    function legacyCopy(text) {
+      var area = document.createElement("textarea");
+      area.value = text;
+      area.setAttribute("readonly", "");
+      area.style.position = "absolute";
+      area.style.left = "-9999px";
+      document.body.appendChild(area);
+      area.select();
+      var ok = false;
+      try {
+        ok = document.execCommand("copy");
+      } catch (e) {
+        ok = false;
+      }
+      document.body.removeChild(area);
+      return ok;
+    }
+
+    function copyFrom(button) {
+      var container = button.closest(".code-block");
+      if (!container) return;
+      var pre = container.querySelector("pre");
+      if (!pre) return;
+      var source = pre.querySelector("code") || pre;
+      var text = source.innerText;
+
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(
+          function () { flash(button); },
+          function () { if (legacyCopy(text)) flash(button); }
+        );
+      } else if (legacyCopy(text)) {
+        flash(button);
+      }
+    }
+
+    document.addEventListener("click", function (event) {
+      var button = event.target.closest(".code-copy");
+      if (button) copyFrom(button);
+    });
+  })();
+</script>
 
     
       
@@ -103,6 +172,13 @@ But I’m still getting older.">
    
   
 
+
+  
+  
+  
+  
+  
+  
   
   
   
@@ -182,13 +258,31 @@ But I’m still getting older.">
           
           <li class="relative list pa2 dropdown">
               
-            <a href="/hatich-goose/captainsblog/" 
+            <a href="/hatich-goose/posts" 
             class="link white dim" 
             >
-              Captain&#39;s Blog
+              Blog
             </a>
               
            
+          <ul class="dropdown-menu absolute left-0 mt2 bg-dark-gray pa2 list">
+          
+            <li class="pa2">
+                
+              <a href="/hatich-goose/posts" class="link white dim">
+                Captain&#39;s Blog
+              </a>
+            </li>
+          
+            <li class="pa2">
+                
+              <a href="/hatich-goose/posts/definitions" class="link white dim">
+                Glossary
+              </a>
+            </li>
+          
+          </ul>
+          
             </li>
           
           <li class="relative list pa2 dropdown">
@@ -274,8 +368,8 @@ But I’m still getting older.">
 
   <article class="page-a-nice-poem flex-l mw7 center ph3 flex-wrap justify-between">
     <header class="mt4 w-100"><aside class="instapaper_ignoref b helvetica tracked ttu">
-    Poetry
-</aside><div id="sharing" class="mt3 ananke-socials"></div>
+    <a class="link dim" href="http://localhost:1313/hatich-goose/writing/poetry/">Poetry</a>
+  </aside><div id="sharing" class="mt3 ananke-socials"></div>
 <h1 class="f1 athelas mt3 mb1">Nostalgia of Days</h1>
       
       
@@ -299,6 +393,8 @@ the leaves are falling from the trees</p>
 <p>And the days are getting shorter<br>
 But I&rsquo;m still getting older.</p>
 <ul class="pa0">
+  
+</ul><ul class="pa0">
   
 </ul>
 

@@ -16,8 +16,77 @@
     
 
     <link rel="stylesheet" href="/hatich-goose/ananke/css/main.css">
-    
+    <script>
+  (function () {
+    "use strict";
 
+    
+    
+    function revealButtons() {
+      var buttons = document.querySelectorAll(".code-block .code-copy[hidden]");
+      for (var i = 0; i < buttons.length; i++) {
+        buttons[i].hidden = false;
+      }
+    }
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", revealButtons);
+    } else {
+      revealButtons();
+    }
+
+    function flash(button) {
+      var label = button.querySelector(".code-copy-label");
+      var previous = label ? label.textContent : null;
+      button.classList.add("is-copied");
+      if (label) label.textContent = "Copied";
+      window.setTimeout(function () {
+        button.classList.remove("is-copied");
+        if (label && previous !== null) label.textContent = previous;
+      }, 2000);
+    }
+
+    function legacyCopy(text) {
+      var area = document.createElement("textarea");
+      area.value = text;
+      area.setAttribute("readonly", "");
+      area.style.position = "absolute";
+      area.style.left = "-9999px";
+      document.body.appendChild(area);
+      area.select();
+      var ok = false;
+      try {
+        ok = document.execCommand("copy");
+      } catch (e) {
+        ok = false;
+      }
+      document.body.removeChild(area);
+      return ok;
+    }
+
+    function copyFrom(button) {
+      var container = button.closest(".code-block");
+      if (!container) return;
+      var pre = container.querySelector("pre");
+      if (!pre) return;
+      var source = pre.querySelector("code") || pre;
+      var text = source.innerText;
+
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(
+          function () { flash(button); },
+          function () { if (legacyCopy(text)) flash(button); }
+        );
+      } else if (legacyCopy(text)) {
+        flash(button);
+      }
+    }
+
+    document.addEventListener("click", function (event) {
+      var button = event.target.closest(".code-copy");
+      if (button) copyFrom(button);
+    });
+  })();
+</script>
 
     
       
@@ -137,13 +206,31 @@
           
           <li class="relative list pa2 dropdown">
               
-            <a href="/hatich-goose/captainsblog/" 
+            <a href="/hatich-goose/posts" 
             class="link white dim" 
             >
-              Captain&#39;s Blog
+              Blog
             </a>
               
            
+          <ul class="dropdown-menu absolute left-0 mt2 bg-dark-gray pa2 list">
+          
+            <li class="pa2">
+                
+              <a href="/hatich-goose/posts" class="link white dim">
+                Captain&#39;s Blog
+              </a>
+            </li>
+          
+            <li class="pa2">
+                
+              <a href="/hatich-goose/posts/definitions" class="link white dim">
+                Glossary
+              </a>
+            </li>
+          
+          </ul>
+          
             </li>
           
           <li class="relative list pa2 dropdown">
@@ -228,14 +315,21 @@
 
     <main class="pb7" role="main">
       
+  
+  
+
   <article class="pa3 pa4-ns nested-copy-line-height">
     <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy nested-links mid-gray"></section>
     <section class="flex-ns mt5 flex-wrap justify-around">
       
         <div class="w-100 w-30-l mb4 relative bg-white">
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2024-12-04T00:00:00Z">December 4, 2024</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/pontius/avemaria/" class="link black dim">
         Ave Maria
@@ -263,9 +357,13 @@ Interred in death’s scents</p>
         </div>
       
         <div class="w-100 w-30-l mb4 relative bg-white">
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2024-11-25T00:00:00Z">November 25, 2024</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/bibleson/martha/" class="link black dim">
         Martha&#39;s Sonnet
@@ -294,9 +392,13 @@ the latkes need a&rsquo;turning.<br>
         </div>
       
         <div class="w-100 w-30-l mb4 relative bg-white">
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2024-11-25T00:00:00Z">November 25, 2024</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/bibleson/obedient/" class="link black dim">
         The Obedient Son
@@ -325,9 +427,13 @@ and served him when in pain.<br>
         </div>
       
         <div class="w-100 w-30-l mb4 relative bg-white">
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2024-11-23T00:00:00Z">November 23, 2024</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/bibleson/cainsson/" class="link black dim">
         Cain&#39;s Sonnet
@@ -356,9 +462,13 @@ and run through muddy grounds.<br>
         </div>
       
         <div class="w-100 w-30-l mb4 relative bg-white">
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2024-11-22T00:00:00Z">November 22, 2024</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/keris/sf_snt13/" class="link black dim">
         Summer Folio, Sonnet 13
@@ -388,9 +498,13 @@ so I could make it mine.<br>
         </div>
       
         <div class="w-100 w-30-l mb4 relative bg-white">
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2024-11-21T00:00:00Z">November 21, 2024</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/keris/wf_snt9/" class="link black dim">
         Winter Folio, Sonnet 9
@@ -419,9 +533,13 @@ and mounds of pillowed snow.<br>
         </div>
       
         <div class="w-100 w-30-l mb4 relative bg-white">
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2024-11-18T00:00:00Z">November 18, 2024</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/ember/graymatter/" class="link black dim">
         Untitled Lake Sonnet / Gray Matter Sonnet
@@ -450,9 +568,13 @@ Like wind or snow or slake.<br>
         </div>
       
         <div class="w-100 w-30-l mb4 relative bg-white">
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2024-11-04T00:00:00Z">November 4, 2024</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/ember/lake-ode/" class="link black dim">
         My Lady of the Lake --- Ode of the 520
@@ -481,9 +603,13 @@ on which my love sustains.<br>
         </div>
       
         <div class="w-100 w-30-l mb4 relative bg-white">
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2024-10-24T00:00:00Z">October 24, 2024</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/ember/insomnia/" class="link black dim">
         Sonnet for Fall Insomnia
@@ -512,9 +638,13 @@ My smile goes along.<br>
         </div>
       
         <div class="w-100 w-30-l mb4 relative bg-white">
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2024-10-23T00:00:00Z">October 23, 2024</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/ember/wintercming/" class="link black dim">
         Sonnet for the Coming Winter

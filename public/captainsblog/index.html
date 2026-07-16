@@ -16,8 +16,77 @@
     
 
     <link rel="stylesheet" href="/hatich-goose/ananke/css/main.css">
-    
+    <script>
+  (function () {
+    "use strict";
 
+    
+    
+    function revealButtons() {
+      var buttons = document.querySelectorAll(".code-block .code-copy[hidden]");
+      for (var i = 0; i < buttons.length; i++) {
+        buttons[i].hidden = false;
+      }
+    }
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", revealButtons);
+    } else {
+      revealButtons();
+    }
+
+    function flash(button) {
+      var label = button.querySelector(".code-copy-label");
+      var previous = label ? label.textContent : null;
+      button.classList.add("is-copied");
+      if (label) label.textContent = "Copied";
+      window.setTimeout(function () {
+        button.classList.remove("is-copied");
+        if (label && previous !== null) label.textContent = previous;
+      }, 2000);
+    }
+
+    function legacyCopy(text) {
+      var area = document.createElement("textarea");
+      area.value = text;
+      area.setAttribute("readonly", "");
+      area.style.position = "absolute";
+      area.style.left = "-9999px";
+      document.body.appendChild(area);
+      area.select();
+      var ok = false;
+      try {
+        ok = document.execCommand("copy");
+      } catch (e) {
+        ok = false;
+      }
+      document.body.removeChild(area);
+      return ok;
+    }
+
+    function copyFrom(button) {
+      var container = button.closest(".code-block");
+      if (!container) return;
+      var pre = container.querySelector("pre");
+      if (!pre) return;
+      var source = pre.querySelector("code") || pre;
+      var text = source.innerText;
+
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(
+          function () { flash(button); },
+          function () { if (legacyCopy(text)) flash(button); }
+        );
+      } else if (legacyCopy(text)) {
+        flash(button);
+      }
+    }
+
+    document.addEventListener("click", function (event) {
+      var button = event.target.closest(".code-copy");
+      if (button) copyFrom(button);
+    });
+  })();
+</script>
 
     
       
@@ -144,6 +213,17 @@
             </a>
               
            
+          <ul class="dropdown-menu absolute left-0 mt2 bg-dark-gray pa2 list">
+          
+            <li class="pa2">
+                
+              <a href="/hatich-goose/captainsblog/definitions" class="link white dim">
+                Definitions
+              </a>
+            </li>
+          
+          </ul>
+          
             </li>
           
           <li class="relative list pa2 dropdown">
@@ -228,14 +308,21 @@
 
     <main class="pb7" role="main">
       
+  
+  
+
   <article class="pa3 pa4-ns nested-copy-line-height">
     <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy nested-links mid-gray"></section>
     <section class="flex-ns mt5 flex-wrap justify-around">
       
         <div class="w-100 w-30-l mb4 relative bg-white">
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Captain&#39;s Blog</span>
+    
+      <time class="f6 db" datetime="2026-07-15T00:00:00Z">July 15, 2026</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/captainsblog/itsallpulp/" class="link black dim">
         (It&#39;s All) Pulp Fiction
@@ -260,9 +347,31 @@
         </div>
       
         <div class="w-100 w-30-l mb4 relative bg-white">
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Captain&#39;s Blog</span>
+    
+    <h1 class="f3 near-black">
+      <a href="/hatich-goose/captainsblog/definitions/" class="link black dim">
+        
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      
+    </div>
+    <a href="/hatich-goose/captainsblog/definitions/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="w-100 w-30-l mb4 relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
+  <div class="mb3 pa4 gray overflow-hidden bg-white">
+    <span class="f6 db">Captain&#39;s Blog</span>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/captainsblog/aword/" class="link black dim">
         A Word From the Author
@@ -280,9 +389,11 @@ Today is the day that I begin posting to the Captain&rsquo;s Blog. It will surel
         </div>
       
         <div class="w-100 w-30-l mb4 relative bg-white">
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Captain&#39;s Blog</span>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/captainsblog/spiderman/" class="link black dim">
         Miguel O&#39;Hara and the Antithesis of Spider-Man

@@ -15,10 +15,17 @@
 			<atom:link href="http://localhost:1313/hatich-goose/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>(It&#39;s All) Pulp Fiction</title>
-				<link>http://localhost:1313/hatich-goose/captainsblog/itsallpulp/</link>
+				<link>http://localhost:1313/hatich-goose/posts/itsallpulp/</link>
 				<pubDate>Wed, 15 Jul 2026 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/hatich-goose/captainsblog/itsallpulp/</guid>
+				<guid>http://localhost:1313/hatich-goose/posts/itsallpulp/</guid>
 				<description>&lt;div class=&#34;image-row&#34; style=&#34;display: flex; gap: 1rem; margin: 2rem auto; flex-wrap: wrap; justify-content: center; align-items: center; max-width: 100%;&#34;&gt;&#xD;&#xA;  &#xD;&#xA;    &#xD;&#xA;    &lt;div style=&#34;flex: 1; min-width: 200px; max-width: 600px;&#34;&gt;&#xD;&#xA;      &lt;img src=&#34;http://localhost:1313/hatich-goose/images/captainsblog/AllPulpFiction.png&#34; alt=&#34;&#34; style=&#34;width: 100%; height: auto; object-fit: cover; display: block;&#34;&gt;&#xD;&#xA;    &lt;/div&gt;&#xD;&#xA;  &#xD;&#xA;&lt;/div&gt;&#xA;&lt;p&gt;It’s come to my attention that I’m a pulp reader. Perhaps I always was.&lt;/p&gt;&#xA;&lt;p&gt;When I was younger I consumed primarily sci-fi and fantasy, and while that’s still true, my new love has evolved into a regression, at least temporally: pulp fiction. The term, as many know, comes from the kind of paper on which these stories were printed on—a kind of cheap, acidic paper that deteriorates and yellows over time. It was first used to refer to “pulp magazines” which were popular from the late 1890’s through 1950’s.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>A Glossary of Terms</title>
+				<link>http://localhost:1313/hatich-goose/posts/definitions/</link>
+				<pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/hatich-goose/posts/definitions/</guid>
+				<description>&lt;p&gt;&lt;em&gt;Welcome to the Captain&amp;rsquo;s Blog Glossary of Terms. Until the Captain gets off her ass and actually modifies this page to be a proper glossary, you can use Ctrl + F in order to search for terms. Terms are organized alphbetically and will be added on an as-needed basis. Apologies for the inconvinience.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;strong&gt;Erotica:&lt;/strong&gt; A sub-genre of the Romance Genre. These works are primarily concerned with telling stories of an erotic or pornographic nature, however, the emphasis on the story itself may be just as important as the soft-core (or sometimes hard-core) porn.&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>Sticks and Stones</title>
@@ -124,13 +131,6 @@
 				<pubDate>Mon, 18 Aug 2025 11:26:57 -0700</pubDate>
 				<guid>http://localhost:1313/hatich-goose/writing/poetry/a-nice-poem/</guid>
 				<description>&lt;p&gt;Where my father&amp;rsquo;s from it&amp;rsquo;s harvest time&lt;br&gt;&#xA;The orchards rich with bounties fine&lt;/p&gt;&#xA;&lt;p&gt;And the days are getting shorter&lt;br&gt;&#xA;But I&amp;rsquo;m still getting older.&lt;/p&gt;&#xA;&lt;p&gt;Where my mother&amp;rsquo;s from it&amp;rsquo;s raining steady&lt;br&gt;&#xA;The humid heat hangs thick and heavy&lt;/p&gt;&#xA;&lt;p&gt;And the days are getting shorter&lt;br&gt;&#xA;But I&amp;rsquo;m still getting older.&lt;/p&gt;&#xA;&lt;p&gt;Where I am from it&amp;rsquo;s turning sweet&lt;br&gt;&#xA;the leaves are falling from the trees&lt;/p&gt;&#xA;&lt;p&gt;And the days are getting shorter&lt;br&gt;&#xA;But I&amp;rsquo;m still getting older.&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>Hello World</title>
-				<link>http://localhost:1313/hatich-goose/posts/hello-world/</link>
-				<pubDate>Sun, 17 Aug 2025 09:37:28 -0700</pubDate>
-				<guid>http://localhost:1313/hatich-goose/posts/hello-world/</guid>
-				<description>&lt;h3 id=&#34;you-can-teach-an-old-dog-new-tricks&#34;&gt;You Can Teach An Old Dog New Tricks&lt;/h3&gt;&#xA;&lt;p&gt;Yes! It &lt;em&gt;is&lt;/em&gt; possible to teach and &lt;em&gt;old&lt;/em&gt; dog &lt;strong&gt;new&lt;/strong&gt; tricks!&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>Scarlet Letters</title>
@@ -414,16 +414,16 @@
 			</item>
 			<item>
 				<title>A Word From the Author</title>
-				<link>http://localhost:1313/hatich-goose/captainsblog/aword/</link>
+				<link>http://localhost:1313/hatich-goose/posts/aword/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/hatich-goose/captainsblog/aword/</guid>
+				<guid>http://localhost:1313/hatich-goose/posts/aword/</guid>
 				<description>&lt;p&gt;&lt;strong&gt;Captain&amp;rsquo;s Blog, stardate -296463.3042237442.&lt;/strong&gt;&lt;br&gt;&#xA;Today is the day that I begin posting to the Captain&amp;rsquo;s Blog. It will surely be an endeavor to maintain a consistent schedule throughout the busy ups-and-downs of life aboard the &lt;em&gt;WWW-Internet,&lt;/em&gt; however, I am confident that I am locquacious enough to keep good company and a font of ideas flowing.&lt;/p&gt;&#xA;&lt;p&gt;Though my work may be, at times, quite lengthy, they are not works of academic quality, nor should be considered as such. They are merely the opinions of a young captain navigating the starry seas of the post-modern pop-media landscape.&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>Miguel O&#39;Hara and the Antithesis of Spider-Man</title>
-				<link>http://localhost:1313/hatich-goose/captainsblog/spiderman/</link>
+				<link>http://localhost:1313/hatich-goose/posts/spiderman/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/hatich-goose/captainsblog/spiderman/</guid>
+				<guid>http://localhost:1313/hatich-goose/posts/spiderman/</guid>
 				<description></description>
 			</item>
 	</channel>

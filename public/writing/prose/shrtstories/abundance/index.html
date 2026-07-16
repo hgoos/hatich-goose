@@ -16,8 +16,77 @@
     
 
     <link rel="stylesheet" href="/hatich-goose/ananke/css/main.css">
-    
+    <script>
+  (function () {
+    "use strict";
 
+    
+    
+    function revealButtons() {
+      var buttons = document.querySelectorAll(".code-block .code-copy[hidden]");
+      for (var i = 0; i < buttons.length; i++) {
+        buttons[i].hidden = false;
+      }
+    }
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", revealButtons);
+    } else {
+      revealButtons();
+    }
+
+    function flash(button) {
+      var label = button.querySelector(".code-copy-label");
+      var previous = label ? label.textContent : null;
+      button.classList.add("is-copied");
+      if (label) label.textContent = "Copied";
+      window.setTimeout(function () {
+        button.classList.remove("is-copied");
+        if (label && previous !== null) label.textContent = previous;
+      }, 2000);
+    }
+
+    function legacyCopy(text) {
+      var area = document.createElement("textarea");
+      area.value = text;
+      area.setAttribute("readonly", "");
+      area.style.position = "absolute";
+      area.style.left = "-9999px";
+      document.body.appendChild(area);
+      area.select();
+      var ok = false;
+      try {
+        ok = document.execCommand("copy");
+      } catch (e) {
+        ok = false;
+      }
+      document.body.removeChild(area);
+      return ok;
+    }
+
+    function copyFrom(button) {
+      var container = button.closest(".code-block");
+      if (!container) return;
+      var pre = container.querySelector("pre");
+      if (!pre) return;
+      var source = pre.querySelector("code") || pre;
+      var text = source.innerText;
+
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(
+          function () { flash(button); },
+          function () { if (legacyCopy(text)) flash(button); }
+        );
+      } else if (legacyCopy(text)) {
+        flash(button);
+      }
+    }
+
+    document.addEventListener("click", function (event) {
+      var button = event.target.closest(".code-copy");
+      if (button) copyFrom(button);
+    });
+  })();
+</script>
 
     
       
@@ -62,6 +131,13 @@
    
   
 
+
+  
+  
+  
+  
+  
+  
   
   
   
@@ -141,13 +217,31 @@
           
           <li class="relative list pa2 dropdown">
               
-            <a href="/hatich-goose/captainsblog/" 
+            <a href="/hatich-goose/posts" 
             class="link white dim" 
             >
-              Captain&#39;s Blog
+              Blog
             </a>
               
            
+          <ul class="dropdown-menu absolute left-0 mt2 bg-dark-gray pa2 list">
+          
+            <li class="pa2">
+                
+              <a href="/hatich-goose/posts" class="link white dim">
+                Captain&#39;s Blog
+              </a>
+            </li>
+          
+            <li class="pa2">
+                
+              <a href="/hatich-goose/posts/definitions" class="link white dim">
+                Glossary
+              </a>
+            </li>
+          
+          </ul>
+          
             </li>
           
           <li class="relative list pa2 dropdown">
@@ -233,8 +327,8 @@
 
   <article class="page-abundance flex-l mw7 center ph3 flex-wrap justify-between">
     <header class="mt4 w-100"><aside class="instapaper_ignoref b helvetica tracked ttu">
-    Prose
-</aside><div id="sharing" class="mt3 ananke-socials"></div>
+    <a class="link dim" href="http://localhost:1313/hatich-goose/writing/prose/">Prose</a>
+  </aside><div id="sharing" class="mt3 ananke-socials"></div>
 <h1 class="f1 athelas mt3 mb1">Inexhaustible Abundance</h1>
       
       
@@ -257,6 +351,8 @@
 <p>Sarah had never felt so freed by the possibility of something before. If life was possible for plants, then life would be possible for humans. Al would never believe it. She turned from the plant still grinning, eyes filled with tears. Behind her, as she hurried back to the bunker, the 무궁화 blossoms spread their frail, thin, petals to meet the pale light.</p>
 <hr>
 <p><em>This piece was originally published on the Seattle Arts &amp; Lectures blog and the 2018/2019 Elain Wetterauer Chapbook. You can find the original blog post and the Chapbook <a href="https://lectures.org/2019/02/27/the-2018-2019-elaine-wetterauer-writing-contest-winners/" target="_blank" rel="noopener noreferrer">here</a>.</em></p><ul class="pa0">
+  
+</ul><ul class="pa0">
   
    <li class="list di">
      <a href="/hatich-goose/tags/short-stories/" class="link f5 grow br-pill ba ph3 pv2 mb2 dib black sans-serif no-underline">Short Stories</a>

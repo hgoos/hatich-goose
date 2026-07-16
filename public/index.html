@@ -16,8 +16,77 @@
     
 
     <link rel="stylesheet" href="/hatich-goose/ananke/css/main.css">
-    
+    <script>
+  (function () {
+    "use strict";
 
+    
+    
+    function revealButtons() {
+      var buttons = document.querySelectorAll(".code-block .code-copy[hidden]");
+      for (var i = 0; i < buttons.length; i++) {
+        buttons[i].hidden = false;
+      }
+    }
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", revealButtons);
+    } else {
+      revealButtons();
+    }
+
+    function flash(button) {
+      var label = button.querySelector(".code-copy-label");
+      var previous = label ? label.textContent : null;
+      button.classList.add("is-copied");
+      if (label) label.textContent = "Copied";
+      window.setTimeout(function () {
+        button.classList.remove("is-copied");
+        if (label && previous !== null) label.textContent = previous;
+      }, 2000);
+    }
+
+    function legacyCopy(text) {
+      var area = document.createElement("textarea");
+      area.value = text;
+      area.setAttribute("readonly", "");
+      area.style.position = "absolute";
+      area.style.left = "-9999px";
+      document.body.appendChild(area);
+      area.select();
+      var ok = false;
+      try {
+        ok = document.execCommand("copy");
+      } catch (e) {
+        ok = false;
+      }
+      document.body.removeChild(area);
+      return ok;
+    }
+
+    function copyFrom(button) {
+      var container = button.closest(".code-block");
+      if (!container) return;
+      var pre = container.querySelector("pre");
+      if (!pre) return;
+      var source = pre.querySelector("code") || pre;
+      var text = source.innerText;
+
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(
+          function () { flash(button); },
+          function () { if (legacyCopy(text)) flash(button); }
+        );
+      } else if (legacyCopy(text)) {
+        flash(button);
+      }
+    }
+
+    document.addEventListener("click", function (event) {
+      var button = event.target.closest(".code-copy");
+      if (button) copyFrom(button);
+    });
+  })();
+</script>
 
     
       
@@ -138,13 +207,31 @@
           
           <li class="relative list pa2 dropdown">
               
-            <a href="/hatich-goose/captainsblog/" 
+            <a href="/hatich-goose/posts" 
             class="link white dim" 
             >
-              Captain&#39;s Blog
+              Blog
             </a>
               
            
+          <ul class="dropdown-menu absolute left-0 mt2 bg-dark-gray pa2 list">
+          
+            <li class="pa2">
+                
+              <a href="/hatich-goose/posts" class="link white dim">
+                Captain&#39;s Blog
+              </a>
+            </li>
+          
+            <li class="pa2">
+                
+              <a href="/hatich-goose/posts/definitions" class="link white dim">
+                Glossary
+              </a>
+            </li>
+          
+          </ul>
+          
             </li>
           
           <li class="relative list pa2 dropdown">
@@ -245,6 +332,7 @@
         
           <div class="w-100 mb4 relative">
             
+
 <article class="bb b--black-10">
   <div class="db pv4 ph3 ph0-l dark-gray no-underline">
     <div class="flex-column flex-row-ns flex">
@@ -257,6 +345,9 @@
         </div>
       
       <div class="blah w-100 w-60-ns pl3-ns">
+        
+          <time class="f6 db" datetime="2026-03-27T00:00:00Z">March 27, 2026</time>
+        
         <h1 class="f3 fw1 athelas mt0 lh-title">
           <a href="/hatich-goose/writing/poetry/sonnets/ember/stcksnstones/" class="color-inherit dim link">
             Sticks and Stones
@@ -288,6 +379,7 @@ Of learning without fear.<br>
         
           <div class="w-100 mb4 relative">
             
+
 <article class="bb b--black-10">
   <div class="db pv4 ph3 ph0-l dark-gray no-underline">
     <div class="flex-column flex-row-ns flex">
@@ -300,6 +392,9 @@ Of learning without fear.<br>
         </div>
       
       <div class="blah w-100 w-60-ns pl3-ns">
+        
+          <time class="f6 db" datetime="2026-03-24T00:00:00Z">March 24, 2026</time>
+        
         <h1 class="f3 fw1 athelas mt0 lh-title">
           <a href="/hatich-goose/writing/poetry/sonnets/ember/amrcnbody/" class="color-inherit dim link">
             The Body of an American / Death Wish
@@ -331,11 +426,15 @@ but relief in Charon’s shade.<br>
         
           <div class="w-100 mb4 relative">
             
+
 <article class="bb b--black-10">
   <div class="db pv4 ph3 ph0-l dark-gray no-underline">
     <div class="flex-column flex-row-ns flex">
       
       <div class="blah w-100">
+        
+          <time class="f6 db" datetime="2026-02-06T00:00:00Z">February 6, 2026</time>
+        
         <h1 class="f3 fw1 athelas mt0 lh-title">
           <a href="/hatich-goose/writing/poetry/lois-lane-prays/" class="color-inherit dim link">
             Untitled Lois Lane

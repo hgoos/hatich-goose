@@ -16,8 +16,77 @@
     
 
     <link rel="stylesheet" href="/hatich-goose/ananke/css/main.css">
-    
+    <script>
+  (function () {
+    "use strict";
 
+    
+    
+    function revealButtons() {
+      var buttons = document.querySelectorAll(".code-block .code-copy[hidden]");
+      for (var i = 0; i < buttons.length; i++) {
+        buttons[i].hidden = false;
+      }
+    }
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", revealButtons);
+    } else {
+      revealButtons();
+    }
+
+    function flash(button) {
+      var label = button.querySelector(".code-copy-label");
+      var previous = label ? label.textContent : null;
+      button.classList.add("is-copied");
+      if (label) label.textContent = "Copied";
+      window.setTimeout(function () {
+        button.classList.remove("is-copied");
+        if (label && previous !== null) label.textContent = previous;
+      }, 2000);
+    }
+
+    function legacyCopy(text) {
+      var area = document.createElement("textarea");
+      area.value = text;
+      area.setAttribute("readonly", "");
+      area.style.position = "absolute";
+      area.style.left = "-9999px";
+      document.body.appendChild(area);
+      area.select();
+      var ok = false;
+      try {
+        ok = document.execCommand("copy");
+      } catch (e) {
+        ok = false;
+      }
+      document.body.removeChild(area);
+      return ok;
+    }
+
+    function copyFrom(button) {
+      var container = button.closest(".code-block");
+      if (!container) return;
+      var pre = container.querySelector("pre");
+      if (!pre) return;
+      var source = pre.querySelector("code") || pre;
+      var text = source.innerText;
+
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(
+          function () { flash(button); },
+          function () { if (legacyCopy(text)) flash(button); }
+        );
+      } else if (legacyCopy(text)) {
+        flash(button);
+      }
+    }
+
+    document.addEventListener("click", function (event) {
+      var button = event.target.closest(".code-copy");
+      if (button) copyFrom(button);
+    });
+  })();
+</script>
 
     
       
@@ -136,13 +205,31 @@
           
           <li class="relative list pa2 dropdown">
               
-            <a href="/hatich-goose/captainsblog/" 
+            <a href="/hatich-goose/posts" 
             class="link white dim" 
             >
-              Captain&#39;s Blog
+              Blog
             </a>
               
            
+          <ul class="dropdown-menu absolute left-0 mt2 bg-dark-gray pa2 list">
+          
+            <li class="pa2">
+                
+              <a href="/hatich-goose/posts" class="link white dim">
+                Captain&#39;s Blog
+              </a>
+            </li>
+          
+            <li class="pa2">
+                
+              <a href="/hatich-goose/posts/definitions" class="link white dim">
+                Glossary
+              </a>
+            </li>
+          
+          </ul>
+          
             </li>
           
           <li class="relative list pa2 dropdown">
@@ -217,7 +304,7 @@
           </h1>
           
           <div class="fw1 f6 white-70 mt3">
-            6 posts
+            7 posts
           </div>
         </div>
       </div>
@@ -237,9 +324,13 @@
       
       
         <div class="mb4 mb5-l bb b--black-10 pb4">
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Prose</span>
+    
+      <time class="f6 db" datetime="2026-02-01T00:00:00Z">February 1, 2026</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/prose/shrtstories/talesofmarieivwa/riptide/" class="link black dim">
         The Riptide
@@ -261,9 +352,13 @@
         </div>
       
         <div class="mb4 mb5-l bb b--black-10 pb4">
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Prose</span>
+    
+      <time class="f6 db" datetime="2024-04-23T00:00:00Z">April 23, 2024</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/prose/shrtstories/talesofmarieivwa/castle-caldera/" class="link black dim">
         Castle Caldera or The Watersnake and the Reed Grass
@@ -282,9 +377,13 @@
         </div>
       
         <div class="mb4 mb5-l bb b--black-10 pb4">
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Prose</span>
+    
+      <time class="f6 db" datetime="2024-04-23T00:00:00Z">April 23, 2024</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/prose/shrtstories/talesofmarieivwa/jean-and-esther/" class="link black dim">
         Water in the Desert or Why the Laughing Dog Laughs
@@ -305,9 +404,13 @@
         </div>
       
         <div class="mb4 mb5-l bb b--black-10 pb4">
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Prose</span>
+    
+      <time class="f6 db" datetime="2024-01-03T00:00:00Z">January 3, 2024</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/prose/shrtstories/thedeep/" class="link black dim">
         The Deep; it Beckons
@@ -327,9 +430,13 @@
         </div>
       
         <div class="mb4 mb5-l bb b--black-10 pb4">
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Prose</span>
+    
+      <time class="f6 db" datetime="2022-03-29T00:00:00Z">March 29, 2022</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/prose/shrtstories/pbb/" class="link black dim">
         Plastic, Bone, Bisque
@@ -349,9 +456,38 @@
         </div>
       
         <div class="mb4 mb5-l bb b--black-10 pb4">
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Prose</span>
+    
+      <time class="f6 db" datetime="2020-11-25T00:00:00Z">November 25, 2020</time>
+    
+    <h1 class="f3 near-black">
+      <a href="/hatich-goose/writing/prose/shrtstories/longrains/" class="link black dim">
+        There Will Come Long Rains
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      
+    </div>
+    <a href="/hatich-goose/writing/prose/shrtstories/longrains/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+          <div class="mt3">
+            <a href="http://localhost:1313/hatich-goose/writing/prose/shrtstories/longrains/" class="link blue hover-dark-blue fw6">Read more →</a>
+          </div>
+        </div>
+      
+        <div class="mb4 mb5-l bb b--black-10 pb4">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
+  <div class="mb3 pa4 gray overflow-hidden bg-white">
+    <span class="f6 db">Prose</span>
+    
+      <time class="f6 db" datetime="2019-02-27T00:00:00Z">February 27, 2019</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/prose/shrtstories/abundance/" class="link black dim">
         Inexhaustible Abundance

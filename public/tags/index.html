@@ -16,8 +16,77 @@
     
 
     <link rel="stylesheet" href="/hatich-goose/ananke/css/main.css">
-    
+    <script>
+  (function () {
+    "use strict";
 
+    
+    
+    function revealButtons() {
+      var buttons = document.querySelectorAll(".code-block .code-copy[hidden]");
+      for (var i = 0; i < buttons.length; i++) {
+        buttons[i].hidden = false;
+      }
+    }
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", revealButtons);
+    } else {
+      revealButtons();
+    }
+
+    function flash(button) {
+      var label = button.querySelector(".code-copy-label");
+      var previous = label ? label.textContent : null;
+      button.classList.add("is-copied");
+      if (label) label.textContent = "Copied";
+      window.setTimeout(function () {
+        button.classList.remove("is-copied");
+        if (label && previous !== null) label.textContent = previous;
+      }, 2000);
+    }
+
+    function legacyCopy(text) {
+      var area = document.createElement("textarea");
+      area.value = text;
+      area.setAttribute("readonly", "");
+      area.style.position = "absolute";
+      area.style.left = "-9999px";
+      document.body.appendChild(area);
+      area.select();
+      var ok = false;
+      try {
+        ok = document.execCommand("copy");
+      } catch (e) {
+        ok = false;
+      }
+      document.body.removeChild(area);
+      return ok;
+    }
+
+    function copyFrom(button) {
+      var container = button.closest(".code-block");
+      if (!container) return;
+      var pre = container.querySelector("pre");
+      if (!pre) return;
+      var source = pre.querySelector("code") || pre;
+      var text = source.innerText;
+
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(
+          function () { flash(button); },
+          function () { if (legacyCopy(text)) flash(button); }
+        );
+      } else if (legacyCopy(text)) {
+        flash(button);
+      }
+    }
+
+    document.addEventListener("click", function (event) {
+      var button = event.target.closest(".code-copy");
+      if (button) copyFrom(button);
+    });
+  })();
+</script>
 
     
       
@@ -131,13 +200,31 @@
           
           <li class="relative list pa2 dropdown">
               
-            <a href="/hatich-goose/captainsblog/" 
+            <a href="/hatich-goose/posts" 
             class="link white dim" 
             >
-              Captain&#39;s Blog
+              Blog
             </a>
               
            
+          <ul class="dropdown-menu absolute left-0 mt2 bg-dark-gray pa2 list">
+          
+            <li class="pa2">
+                
+              <a href="/hatich-goose/posts" class="link white dim">
+                Captain&#39;s Blog
+              </a>
+            </li>
+          
+            <li class="pa2">
+                
+              <a href="/hatich-goose/posts/definitions" class="link white dim">
+                Glossary
+              </a>
+            </li>
+          
+          </ul>
+          
             </li>
           
           <li class="relative list pa2 dropdown">
@@ -233,9 +320,13 @@
           </a>
         </h2>
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2026-03-27T00:00:00Z">March 27, 2026</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/ember/stcksnstones/" class="link black dim">
         Sticks and Stones
@@ -262,9 +353,13 @@ Of learning without fear.<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2026-03-24T00:00:00Z">March 24, 2026</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/ember/amrcnbody/" class="link black dim">
         The Body of an American / Death Wish
@@ -291,9 +386,13 @@ but relief in Charon’s shade.<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2025-09-29T00:00:00Z">September 29, 2025</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/keris/1alis/" class="link black dim">
         The Sonnets of Keris
@@ -308,9 +407,13 @@ but relief in Charon’s shade.<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2025-08-31T00:00:00Z">August 31, 2025</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/ember/faith/" class="link black dim">
         Faith Sonnet
@@ -338,9 +441,13 @@ before it is replaced.<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2025-08-08T00:00:00Z">August 8, 2025</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/ember/scarlet/" class="link black dim">
         Scarlet Letters
@@ -367,9 +474,13 @@ is where I taste her best!<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2025-08-03T00:00:00Z">August 3, 2025</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/ember/mummy/" class="link black dim">
         Mummification at Constantinople
@@ -396,9 +507,13 @@ and put me in the ground<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2025-08-02T00:00:00Z">August 2, 2025</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/ember/secrets/" class="link black dim">
         No Secrets
@@ -426,9 +541,13 @@ I often hear them say,<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2025-01-29T00:00:00Z">January 29, 2025</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/ember/helophile/" class="link black dim">
         Heliophile
@@ -456,9 +575,13 @@ Since winters’ losing score.<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2025-01-13T00:00:00Z">January 13, 2025</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/ember/anemoi/" class="link black dim">
         A Poker Game with the Anemoi
@@ -485,9 +608,13 @@ of darker matter stuff.<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2025-01-08T00:00:00Z">January 8, 2025</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/keris/wf_snt17/" class="link black dim">
         Winter Folio, Sonnet 17
@@ -514,9 +641,13 @@ the promise of gold rays.<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2024-11-25T00:00:00Z">November 25, 2024</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/bibleson/martha/" class="link black dim">
         Martha&#39;s Sonnet
@@ -543,9 +674,13 @@ the latkes need a&rsquo;turning.<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2024-11-25T00:00:00Z">November 25, 2024</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/bibleson/obedient/" class="link black dim">
         The Obedient Son
@@ -572,9 +707,13 @@ and served him when in pain.<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2024-11-23T00:00:00Z">November 23, 2024</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/bibleson/cainsson/" class="link black dim">
         Cain&#39;s Sonnet
@@ -601,9 +740,13 @@ and run through muddy grounds.<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2024-11-22T00:00:00Z">November 22, 2024</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/keris/sf_snt13/" class="link black dim">
         Summer Folio, Sonnet 13
@@ -631,9 +774,13 @@ so I could make it mine.<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2024-11-21T00:00:00Z">November 21, 2024</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/keris/wf_snt9/" class="link black dim">
         Winter Folio, Sonnet 9
@@ -660,9 +807,13 @@ and mounds of pillowed snow.<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2024-11-18T00:00:00Z">November 18, 2024</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/ember/graymatter/" class="link black dim">
         Untitled Lake Sonnet / Gray Matter Sonnet
@@ -689,9 +840,13 @@ Like wind or snow or slake.<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2024-11-04T00:00:00Z">November 4, 2024</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/ember/lake-ode/" class="link black dim">
         My Lady of the Lake --- Ode of the 520
@@ -718,9 +873,13 @@ on which my love sustains.<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2024-10-24T00:00:00Z">October 24, 2024</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/ember/insomnia/" class="link black dim">
         Sonnet for Fall Insomnia
@@ -747,9 +906,13 @@ My smile goes along.<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2024-10-23T00:00:00Z">October 23, 2024</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/ember/wintercming/" class="link black dim">
         Sonnet for the Coming Winter
@@ -776,9 +939,13 @@ become a battleground.<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2024-06-06T00:00:00Z">June 6, 2024</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/ember/thesisters/" class="link black dim">
         The Sisters
@@ -805,9 +972,13 @@ In heat and harmony.<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2024-06-06T00:00:00Z">June 6, 2024</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/ember/thesun/" class="link black dim">
         The Sun
@@ -834,9 +1005,13 @@ And dissipates my fear.<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2024-02-22T00:00:00Z">February 22, 2024</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/keris/sf_snt1/" class="link black dim">
         Summer Folio, Sonnet 1
@@ -863,9 +1038,13 @@ and then does as she pleases.<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2023-03-08T00:00:00Z">March 8, 2023</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/keris/af_snt10/" class="link black dim">
         Autumn Folio, Sonnet 10
@@ -892,9 +1071,13 @@ to reach your walls within.<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2023-03-08T00:00:00Z">March 8, 2023</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/keris/wf_snt1/" class="link black dim">
         Winter Folio, Sonnet 1
@@ -929,9 +1112,13 @@ among celestial snow.<br>
           </a>
         </h2>
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2026-03-27T00:00:00Z">March 27, 2026</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/ember/stcksnstones/" class="link black dim">
         Sticks and Stones
@@ -958,9 +1145,13 @@ Of learning without fear.<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2026-03-24T00:00:00Z">March 24, 2026</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/ember/amrcnbody/" class="link black dim">
         The Body of an American / Death Wish
@@ -987,9 +1178,13 @@ but relief in Charon’s shade.<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2025-09-29T00:00:00Z">September 29, 2025</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/keris/1alis/" class="link black dim">
         The Sonnets of Keris
@@ -1004,9 +1199,13 @@ but relief in Charon’s shade.<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2025-08-31T00:00:00Z">August 31, 2025</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/ember/faith/" class="link black dim">
         Faith Sonnet
@@ -1034,9 +1233,13 @@ before it is replaced.<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2025-08-08T00:00:00Z">August 8, 2025</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/ember/scarlet/" class="link black dim">
         Scarlet Letters
@@ -1063,9 +1266,13 @@ is where I taste her best!<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2025-08-03T00:00:00Z">August 3, 2025</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/ember/mummy/" class="link black dim">
         Mummification at Constantinople
@@ -1092,9 +1299,13 @@ and put me in the ground<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2025-08-02T00:00:00Z">August 2, 2025</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/ember/secrets/" class="link black dim">
         No Secrets
@@ -1122,9 +1333,13 @@ I often hear them say,<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2025-01-29T00:00:00Z">January 29, 2025</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/ember/helophile/" class="link black dim">
         Heliophile
@@ -1152,9 +1367,13 @@ Since winters’ losing score.<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2025-01-13T00:00:00Z">January 13, 2025</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/ember/anemoi/" class="link black dim">
         A Poker Game with the Anemoi
@@ -1181,9 +1400,13 @@ of darker matter stuff.<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2025-01-08T00:00:00Z">January 8, 2025</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/keris/wf_snt17/" class="link black dim">
         Winter Folio, Sonnet 17
@@ -1210,9 +1433,13 @@ the promise of gold rays.<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2024-11-25T00:00:00Z">November 25, 2024</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/bibleson/martha/" class="link black dim">
         Martha&#39;s Sonnet
@@ -1239,9 +1466,13 @@ the latkes need a&rsquo;turning.<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2024-11-25T00:00:00Z">November 25, 2024</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/bibleson/obedient/" class="link black dim">
         The Obedient Son
@@ -1268,9 +1499,13 @@ and served him when in pain.<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2024-11-23T00:00:00Z">November 23, 2024</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/bibleson/cainsson/" class="link black dim">
         Cain&#39;s Sonnet
@@ -1297,9 +1532,13 @@ and run through muddy grounds.<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2024-11-22T00:00:00Z">November 22, 2024</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/keris/sf_snt13/" class="link black dim">
         Summer Folio, Sonnet 13
@@ -1327,9 +1566,13 @@ so I could make it mine.<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2024-11-21T00:00:00Z">November 21, 2024</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/keris/wf_snt9/" class="link black dim">
         Winter Folio, Sonnet 9
@@ -1356,9 +1599,13 @@ and mounds of pillowed snow.<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2024-11-18T00:00:00Z">November 18, 2024</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/ember/graymatter/" class="link black dim">
         Untitled Lake Sonnet / Gray Matter Sonnet
@@ -1385,9 +1632,13 @@ Like wind or snow or slake.<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2024-11-04T00:00:00Z">November 4, 2024</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/ember/lake-ode/" class="link black dim">
         My Lady of the Lake --- Ode of the 520
@@ -1414,9 +1665,13 @@ on which my love sustains.<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2024-10-24T00:00:00Z">October 24, 2024</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/ember/insomnia/" class="link black dim">
         Sonnet for Fall Insomnia
@@ -1443,9 +1698,13 @@ My smile goes along.<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2024-10-23T00:00:00Z">October 23, 2024</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/ember/wintercming/" class="link black dim">
         Sonnet for the Coming Winter
@@ -1472,9 +1731,13 @@ become a battleground.<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2024-06-06T00:00:00Z">June 6, 2024</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/ember/thesisters/" class="link black dim">
         The Sisters
@@ -1501,9 +1764,13 @@ In heat and harmony.<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2024-06-06T00:00:00Z">June 6, 2024</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/ember/thesun/" class="link black dim">
         The Sun
@@ -1530,9 +1797,13 @@ And dissipates my fear.<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2024-02-22T00:00:00Z">February 22, 2024</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/keris/sf_snt1/" class="link black dim">
         Summer Folio, Sonnet 1
@@ -1559,9 +1830,13 @@ and then does as she pleases.<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2023-03-08T00:00:00Z">March 8, 2023</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/keris/af_snt10/" class="link black dim">
         Autumn Folio, Sonnet 10
@@ -1588,9 +1863,13 @@ to reach your walls within.<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2023-03-08T00:00:00Z">March 8, 2023</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/keris/wf_snt1/" class="link black dim">
         Winter Folio, Sonnet 1
@@ -1625,9 +1904,13 @@ among celestial snow.<br>
           </a>
         </h2>
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Prose</span>
+    
+      <time class="f6 db" datetime="2026-02-01T00:00:00Z">February 1, 2026</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/prose/shrtstories/talesofmarieivwa/riptide/" class="link black dim">
         The Riptide
@@ -1644,9 +1927,13 @@ among celestial snow.<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Prose</span>
+    
+      <time class="f6 db" datetime="2024-04-23T00:00:00Z">April 23, 2024</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/prose/shrtstories/talesofmarieivwa/castle-caldera/" class="link black dim">
         Castle Caldera or The Watersnake and the Reed Grass
@@ -1660,9 +1947,13 @@ among celestial snow.<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Prose</span>
+    
+      <time class="f6 db" datetime="2024-04-23T00:00:00Z">April 23, 2024</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/prose/shrtstories/talesofmarieivwa/jean-and-esther/" class="link black dim">
         Water in the Desert or Why the Laughing Dog Laughs
@@ -1685,9 +1976,13 @@ among celestial snow.<br>
           </a>
         </h2>
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Prose</span>
+    
+      <time class="f6 db" datetime="2026-02-01T00:00:00Z">February 1, 2026</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/prose/shrtstories/talesofmarieivwa/riptide/" class="link black dim">
         The Riptide
@@ -1704,9 +1999,13 @@ among celestial snow.<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Prose</span>
+    
+      <time class="f6 db" datetime="2024-04-23T00:00:00Z">April 23, 2024</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/prose/shrtstories/talesofmarieivwa/castle-caldera/" class="link black dim">
         Castle Caldera or The Watersnake and the Reed Grass
@@ -1727,9 +2026,13 @@ among celestial snow.<br>
           </a>
         </h2>
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Prose</span>
+    
+      <time class="f6 db" datetime="2026-02-01T00:00:00Z">February 1, 2026</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/prose/shrtstories/talesofmarieivwa/riptide/" class="link black dim">
         The Riptide
@@ -1746,9 +2049,13 @@ among celestial snow.<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Prose</span>
+    
+      <time class="f6 db" datetime="2024-04-23T00:00:00Z">April 23, 2024</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/prose/shrtstories/talesofmarieivwa/castle-caldera/" class="link black dim">
         Castle Caldera or The Watersnake and the Reed Grass
@@ -1762,9 +2069,13 @@ among celestial snow.<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Prose</span>
+    
+      <time class="f6 db" datetime="2024-04-23T00:00:00Z">April 23, 2024</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/prose/shrtstories/talesofmarieivwa/jean-and-esther/" class="link black dim">
         Water in the Desert or Why the Laughing Dog Laughs
@@ -1780,9 +2091,13 @@ among celestial snow.<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Prose</span>
+    
+      <time class="f6 db" datetime="2024-01-03T00:00:00Z">January 3, 2024</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/prose/shrtstories/thedeep/" class="link black dim">
         The Deep; it Beckons
@@ -1797,9 +2112,13 @@ among celestial snow.<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Prose</span>
+    
+      <time class="f6 db" datetime="2022-03-29T00:00:00Z">March 29, 2022</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/prose/shrtstories/pbb/" class="link black dim">
         Plastic, Bone, Bisque
@@ -1814,9 +2133,33 @@ among celestial snow.<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Prose</span>
+    
+      <time class="f6 db" datetime="2020-11-25T00:00:00Z">November 25, 2020</time>
+    
+    <h1 class="f3 near-black">
+      <a href="/hatich-goose/writing/prose/shrtstories/longrains/" class="link black dim">
+        There Will Come Long Rains
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      
+    </div>
+    <a href="/hatich-goose/writing/prose/shrtstories/longrains/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
+  <div class="mb3 pa4 gray overflow-hidden bg-white">
+    <span class="f6 db">Prose</span>
+    
+      <time class="f6 db" datetime="2019-02-27T00:00:00Z">February 27, 2019</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/prose/shrtstories/abundance/" class="link black dim">
         Inexhaustible Abundance
@@ -1837,9 +2180,13 @@ among celestial snow.<br>
           </a>
         </h2>
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2025-09-29T00:00:00Z">September 29, 2025</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/keris/1alis/" class="link black dim">
         The Sonnets of Keris
@@ -1854,9 +2201,13 @@ among celestial snow.<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2025-01-08T00:00:00Z">January 8, 2025</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/keris/wf_snt17/" class="link black dim">
         Winter Folio, Sonnet 17
@@ -1883,9 +2234,13 @@ the promise of gold rays.<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2024-11-22T00:00:00Z">November 22, 2024</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/keris/sf_snt13/" class="link black dim">
         Summer Folio, Sonnet 13
@@ -1913,9 +2268,13 @@ so I could make it mine.<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2024-11-21T00:00:00Z">November 21, 2024</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/keris/wf_snt9/" class="link black dim">
         Winter Folio, Sonnet 9
@@ -1942,9 +2301,13 @@ and mounds of pillowed snow.<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2024-02-22T00:00:00Z">February 22, 2024</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/keris/sf_snt1/" class="link black dim">
         Summer Folio, Sonnet 1
@@ -1971,9 +2334,13 @@ and then does as she pleases.<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2023-03-08T00:00:00Z">March 8, 2023</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/keris/af_snt10/" class="link black dim">
         Autumn Folio, Sonnet 10
@@ -2000,9 +2367,13 @@ to reach your walls within.<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2023-03-08T00:00:00Z">March 8, 2023</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/keris/wf_snt1/" class="link black dim">
         Winter Folio, Sonnet 1
@@ -2037,9 +2408,13 @@ among celestial snow.<br>
           </a>
         </h2>
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2025-09-18T00:00:00Z">September 18, 2025</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/amsent/childhood/" class="link black dim">
         American Infancia
@@ -2067,9 +2442,13 @@ I pray when Death comes for me I jump into that final abyss like I jumped off th
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2025-09-18T00:00:00Z">September 18, 2025</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/amsent/hangook/" class="link black dim">
         풍수 / Geomancy
@@ -2090,9 +2469,13 @@ Every time that I visit I edge closer and closer to the war.</p>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2025-09-17T00:00:00Z">September 17, 2025</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/amsent/irishint/" class="link black dim">
         An Irish Interlude
@@ -2118,9 +2501,13 @@ Here—I’m an American—new; in an Irish poet’s old tower.</p>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2025-09-16T00:00:00Z">September 16, 2025</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/amsent/firststeps/" class="link black dim">
         First Steps
@@ -2141,9 +2528,13 @@ Here—I’m an American—new; in an Irish poet’s old tower.</p>
           </a>
         </h2>
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Comics</span>
+    
+      <time class="f6 db" datetime="2025-09-03T10:12:59-07:00">September 3, 2025</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/comics/comics-art/c-k/" class="link black dim">
         Cruelty and Kindness
@@ -2165,9 +2556,13 @@ Here—I’m an American—new; in an Irish poet’s old tower.</p>
           </a>
         </h2>
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Comics</span>
+    
+      <time class="f6 db" datetime="2025-09-03T10:12:59-07:00">September 3, 2025</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/comics/comics-art/c-k/" class="link black dim">
         Cruelty and Kindness
@@ -2189,9 +2584,13 @@ Here—I’m an American—new; in an Irish poet’s old tower.</p>
           </a>
         </h2>
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2025-08-31T00:00:00Z">August 31, 2025</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/ember/faith/" class="link black dim">
         Faith Sonnet
@@ -2219,9 +2618,13 @@ before it is replaced.<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2025-08-08T00:00:00Z">August 8, 2025</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/ember/scarlet/" class="link black dim">
         Scarlet Letters
@@ -2248,9 +2651,13 @@ is where I taste her best!<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2025-04-22T00:00:00Z">April 22, 2025</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/pontius/cokejesus/" class="link black dim">
         Cocaine Jesus
@@ -2276,9 +2683,13 @@ Parables of trans prodigal sons and gang violence.</p>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2025-03-12T00:00:00Z">March 12, 2025</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/pontius/symphony1/" class="link black dim">
         The Veritas Symphony (Speak Truth to All Things)
@@ -2309,9 +2720,13 @@ Who burned with fever day and night<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2024-12-07T00:00:00Z">December 7, 2024</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/pontius/kissknife/" class="link black dim">
         The Kiss; the Knife
@@ -2337,9 +2752,13 @@ Who burned with fever day and night<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2024-12-05T00:00:00Z">December 5, 2024</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/pontius/spqa/" class="link black dim">
         SPQA
@@ -2369,9 +2788,13 @@ In red and gold</p>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2024-12-04T00:00:00Z">December 4, 2024</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/pontius/avemaria/" class="link black dim">
         Ave Maria
@@ -2397,9 +2820,13 @@ Interred in death’s scents</p>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2024-11-25T00:00:00Z">November 25, 2024</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/bibleson/martha/" class="link black dim">
         Martha&#39;s Sonnet
@@ -2426,9 +2853,13 @@ the latkes need a&rsquo;turning.<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2024-11-25T00:00:00Z">November 25, 2024</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/bibleson/obedient/" class="link black dim">
         The Obedient Son
@@ -2455,9 +2886,13 @@ and served him when in pain.<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2024-11-23T00:00:00Z">November 23, 2024</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/bibleson/cainsson/" class="link black dim">
         Cain&#39;s Sonnet
@@ -2484,9 +2919,13 @@ and run through muddy grounds.<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Comics</span>
+    
+      <time class="f6 db" datetime="2023-02-20T00:00:00Z">February 20, 2023</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/comics/comics-scrpt/faith-scrpt/" class="link black dim">
         Crisis of Faith
@@ -2508,9 +2947,13 @@ There is certainly a way to condense this script so that it’s shorter and make
           </a>
         </h2>
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2025-04-22T00:00:00Z">April 22, 2025</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/pontius/cokejesus/" class="link black dim">
         Cocaine Jesus
@@ -2536,9 +2979,13 @@ Parables of trans prodigal sons and gang violence.</p>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2025-03-12T00:00:00Z">March 12, 2025</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/pontius/symphony1/" class="link black dim">
         The Veritas Symphony (Speak Truth to All Things)
@@ -2569,9 +3016,13 @@ Who burned with fever day and night<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2024-12-07T00:00:00Z">December 7, 2024</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/pontius/kissknife/" class="link black dim">
         The Kiss; the Knife
@@ -2597,9 +3048,13 @@ Who burned with fever day and night<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2024-12-05T00:00:00Z">December 5, 2024</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/pontius/spqa/" class="link black dim">
         SPQA
@@ -2629,9 +3084,13 @@ In red and gold</p>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2024-12-04T00:00:00Z">December 4, 2024</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/pontius/avemaria/" class="link black dim">
         Ave Maria
@@ -2664,9 +3123,13 @@ Interred in death’s scents</p>
           </a>
         </h2>
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Comics</span>
+    
+      <time class="f6 db" datetime="2025-01-10T00:00:00Z">January 10, 2025</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/comics/comics-scrpt/eyehearthemall/" class="link black dim">
         I Hear Them All
@@ -2680,9 +3143,13 @@ Interred in death’s scents</p>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Comics</span>
+    
+      <time class="f6 db" datetime="2023-02-20T00:00:00Z">February 20, 2023</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/comics/comics-scrpt/faith-scrpt/" class="link black dim">
         Crisis of Faith
@@ -2697,9 +3164,13 @@ There is certainly a way to condense this script so that it’s shorter and make
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Comics</span>
+    
+      <time class="f6 db" datetime="2022-07-14T00:00:00Z">July 14, 2022</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/comics/comics-scrpt/ck-scrpt/" class="link black dim">
         Cruelty and Kindness
@@ -2724,9 +3195,13 @@ SUPERMAN sitting in his costume on the edge of a Gotham rooftop, overlooking the
           </a>
         </h2>
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2024-11-25T00:00:00Z">November 25, 2024</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/bibleson/martha/" class="link black dim">
         Martha&#39;s Sonnet
@@ -2753,9 +3228,13 @@ the latkes need a&rsquo;turning.<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2024-11-25T00:00:00Z">November 25, 2024</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/bibleson/obedient/" class="link black dim">
         The Obedient Son
@@ -2782,9 +3261,13 @@ and served him when in pain.<br>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2024-11-23T00:00:00Z">November 23, 2024</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/sonnets/bibleson/cainsson/" class="link black dim">
         Cain&#39;s Sonnet
@@ -2818,9 +3301,13 @@ and run through muddy grounds.<br>
           </a>
         </h2>
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Prose</span>
+    
+      <time class="f6 db" datetime="2024-04-23T00:00:00Z">April 23, 2024</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/prose/shrtstories/talesofmarieivwa/jean-and-esther/" class="link black dim">
         Water in the Desert or Why the Laughing Dog Laughs
@@ -2843,9 +3330,13 @@ and run through muddy grounds.<br>
           </a>
         </h2>
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Prose</span>
+    
+      <time class="f6 db" datetime="2022-05-04T00:00:00Z">May 4, 2022</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/prose/essay/sanctuary/" class="link black dim">
         Sanctuary
@@ -2866,9 +3357,13 @@ and run through muddy grounds.<br>
           </a>
         </h2>
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2020-11-09T00:00:00Z">November 9, 2020</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/theydo/" class="link black dim">
         And They Do
@@ -2898,9 +3393,13 @@ undisturbed by the screams of fighter jets and families.</p>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Prose</span>
+    
+      <time class="f6 db" datetime="2019-02-27T00:00:00Z">February 27, 2019</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/prose/shrtstories/abundance/" class="link black dim">
         Inexhaustible Abundance
@@ -2914,9 +3413,13 @@ undisturbed by the screams of fighter jets and families.</p>
 </div>
 
         
-          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
   <div class="mb3 pa4 gray overflow-hidden bg-white">
     <span class="f6 db">Poetry</span>
+    
+      <time class="f6 db" datetime="2018-11-02T00:00:00Z">November 2, 2018</time>
+    
     <h1 class="f3 near-black">
       <a href="/hatich-goose/writing/poetry/compass/" class="link black dim">
         Compass that Points Her Home
