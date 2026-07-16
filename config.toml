@@ -57,41 +57,47 @@ linkedin = "https://linkedin.com/in/helena-goos-29a3232b4"
   url = "/"
   weight = 4
 
+[[menu.main]]
+  name = "Captain's Blog"
+  url = "/captainsblog/"
+  weight = 5
+
+
 
 [[menu.main]]
   name = "Art"
   url = "/comics/comics-art"
   parent = "Comics"
-  weight = 5
+  weight = 6
 
 [[menu.main]]
   name = "Scripts"
   url = "/comics/comics-scrpt"
   parent = "Comics"
-  weight = 6
+  weight = 7
 
 [[menu.main]]
   name = "Other Work"
   url = "/"
-  weight = 7
+  weight = 8
 
 [[menu.main]]
   name = "International Examiner"
   url = "https://iexaminer.org/author/helena-goos/"
   parent = "Other Work"
-  weight = 8
+  weight = 9
 
 [[menu.main]]
   name = "Marketing Choices"
   url = "https://marketingchoices.com/2024/11/07/helena-goos/"
   parent = "Other Work"
-  weight = 9
+  weight = 10
 
 [[menu.main]]
   name = "Seattle Arts and Lectures"
   url = "/tags/seattle-arts-and-lectures"
   parent = "Other Work"
-  weight = 10
+  weight = 11
 
 
 [[menu.main]]

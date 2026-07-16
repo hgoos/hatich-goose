@@ -62,5 +62,12 @@
 				<guid>http://localhost:1313/hatich-goose/writing/prose/shrtstories/abundance/</guid>
 				<description>&lt;p&gt;Sarah walked across the barren earthscape, oxygen mask covering her face, goggles fogging as she exhaled. It was spring, (according to the calendar in the bunker) but the sky was still choked with the dust and smog of everything. Watery sun filtered through the particulates, illuminating the landscape in a cream-colored light.&lt;/p&gt;</description>
 			</item>
+			<item>
+				<title></title>
+				<link>http://localhost:1313/hatich-goose/writing/prose/shrtstories/longrains/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/hatich-goose/writing/prose/shrtstories/longrains/</guid>
+				<description></description>
+			</item>
 	</channel>
 </rss>

@@ -10,9 +10,23 @@
 		
 		
 		
-			<lastBuildDate>Fri, 27 Mar 2026 00:00:00 +0000</lastBuildDate>
+			<lastBuildDate>Wed, 15 Jul 2026 00:00:00 +0000</lastBuildDate>
 		
 			<atom:link href="http://localhost:1313/hatich-goose/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>(It&#39;s All) Pulp Fiction</title>
+				<link>http://localhost:1313/hatich-goose/captainsblog/itsallpulp/</link>
+				<pubDate>Wed, 15 Jul 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/hatich-goose/captainsblog/itsallpulp/</guid>
+				<description>&lt;div class=&#34;image-row&#34; style=&#34;display: flex; gap: 1rem; margin: 2rem auto; flex-wrap: wrap; justify-content: center; align-items: center; max-width: 100%;&#34;&gt;&#xD;&#xA;  &#xD;&#xA;    &#xD;&#xA;    &lt;div style=&#34;flex: 1; min-width: 200px; max-width: 600px;&#34;&gt;&#xD;&#xA;      &lt;img src=&#34;http://localhost:1313/hatich-goose/images/captainsblog/AllPulpFiction.png&#34; alt=&#34;&#34; style=&#34;width: 100%; height: auto; object-fit: cover; display: block;&#34;&gt;&#xD;&#xA;    &lt;/div&gt;&#xD;&#xA;  &#xD;&#xA;&lt;/div&gt;&#xA;&lt;p&gt;It’s come to my attention that I’m a pulp reader. Perhaps I always was.&lt;/p&gt;&#xA;&lt;p&gt;When I was younger I consumed primarily sci-fi and fantasy, and while that’s still true, my new love has evolved into a regression, at least temporally: pulp fiction. The term, as many know, comes from the kind of paper on which these stories were printed on—a kind of cheap, acidic paper that deteriorates and yellows over time. It was first used to refer to “pulp magazines” which were popular from the late 1890’s through 1950’s.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>A Word From the Author</title>
+				<link>http://localhost:1313/hatich-goose/captainsblog/aword/</link>
+				<pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/hatich-goose/captainsblog/aword/</guid>
+				<description>&lt;p&gt;&lt;strong&gt;Captain&amp;rsquo;s Blog, stardate -296463.3042237442.&lt;/strong&gt;&lt;br&gt;&#xA;Today is the day that I begin posting to the Captain&amp;rsquo;s Blog. It will surely be an endeavor to maintain a consistent schedule throughout the busy ups-and-downs of life aboard the &lt;em&gt;WWW-Internet,&lt;/em&gt; however, I am confident that I am locquacious enough to keep good company and a font of ideas flowing.&lt;/p&gt;&#xA;&lt;p&gt;Though my work may be, at times, quite lengthy, they are not works of academic quality, nor should be considered as such. They are merely the opinions of a young captain navigating the starry seas of the post-modern pop-media landscape.&lt;/p&gt;</description>
+			</item>
 			<item>
 				<title>Sticks and Stones</title>
 				<link>http://localhost:1313/hatich-goose/writing/poetry/sonnets/ember/stcksnstones/</link>
@@ -396,6 +410,20 @@
 				<link>http://localhost:1313/hatich-goose/otherwrk/seaart/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
 				<guid>http://localhost:1313/hatich-goose/otherwrk/seaart/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title></title>
+				<link>http://localhost:1313/hatich-goose/writing/prose/shrtstories/longrains/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/hatich-goose/writing/prose/shrtstories/longrains/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Miguel O&#39;Hara and the Antithesis of Spider-Man</title>
+				<link>http://localhost:1313/hatich-goose/captainsblog/spiderman/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/hatich-goose/captainsblog/spiderman/</guid>
 				<description></description>
 			</item>
 	</channel>
