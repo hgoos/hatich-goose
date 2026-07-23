@@ -20,6 +20,10 @@ cover_dimming_class = "bg-black-60"
 
 ---
 
+**Military Science Fiction:** Science fiction where the military is the main framing for the story or with a special interest in the miltary and its technolgical developments. Examples include *Ender's Game,* *Battlestar Galactica,* and *Starship Troopers.*
+
+---
+
 **Romance / Romance Fiction:** A genre of fiction primarily focused on the interpersonal romantic relationships between people. This is an umbrella term that can encapsulate everything from Supernatural Romance (think: *Twilight)* to Erotica (think: *50 Shades of Gray).*
 
 ---

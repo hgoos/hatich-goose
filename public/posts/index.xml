@@ -10,9 +10,16 @@
 		
 		
 		
-			<lastBuildDate>Wed, 15 Jul 2026 00:00:00 +0000</lastBuildDate>
+			<lastBuildDate>Thu, 23 Jul 2026 00:00:00 +0000</lastBuildDate>
 		
 			<atom:link href="http://localhost:1313/hatich-goose/posts/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>What is Military Science Ficiton Good For, Anyways?</title>
+				<link>http://localhost:1313/hatich-goose/posts/militia/</link>
+				<pubDate>Thu, 23 Jul 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/hatich-goose/posts/militia/</guid>
+				<description>&lt;div class=&#34;image-row&#34; style=&#34;display: flex; gap: 1rem; margin: 2rem auto; flex-wrap: wrap; justify-content: center; align-items: center; max-width: 100%;&#34;&gt;&#xD;&#xA;  &#xD;&#xA;    &#xD;&#xA;    &lt;div style=&#34;flex: 1; min-width: 200px; max-width: 600px;&#34;&gt;&#xD;&#xA;      &lt;img src=&#34;http://localhost:1313/hatich-goose/images/captainsblog/OoRahSciFi.png&#34; alt=&#34;&#34; style=&#34;width: 100%; height: auto; object-fit: cover; display: block;&#34;&gt;&#xD;&#xA;    &lt;/div&gt;&#xD;&#xA;  &#xD;&#xA;&lt;/div&gt;&#xA;&lt;p&gt;Military science fiction, like all things, can be multiple things at once. It can be dystopia, thriller, or horror. It can be a promotion of the military and all the accolades and kinship that come with it: at the same time it can be a cutting critique of the very same kinds of ideals and the humanity that one must set aside to follow orders.&lt;/p&gt;</description>
+			</item>
 			<item>
 				<title>(It&#39;s All) Pulp Fiction</title>
 				<link>http://localhost:1313/hatich-goose/posts/itsallpulp/</link>
