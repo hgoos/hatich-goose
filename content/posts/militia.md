@@ -1,6 +1,6 @@
 +++
 date = '2026-07-23'
-title = "What is Military Science Ficiton Good For, Anyways?"
+title = "What is Military Science Fiction Good For, Anyways?"
 draft = false
 featured_image = "/images/captainsblog/GoosMemeSeamless.png"
 featured_image_class = "contain"
