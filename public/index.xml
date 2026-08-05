@@ -10,9 +10,16 @@
 		
 		
 		
-			<lastBuildDate>Wed, 29 Jul 2026 00:00:00 +0000</lastBuildDate>
+			<lastBuildDate>Wed, 05 Aug 2026 00:00:00 +0000</lastBuildDate>
 		
 			<atom:link href="http://localhost:1313/hatich-goose/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Blood, Mice, and Tears: A Mouse Guard Retrospective</title>
+				<link>http://localhost:1313/hatich-goose/posts/msgrd/</link>
+				<pubDate>Wed, 05 Aug 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/hatich-goose/posts/msgrd/</guid>
+				<description>&lt;div class=&#34;image-row&#34; style=&#34;display: flex; gap: 1rem; margin: 2rem auto; flex-wrap: wrap; justify-content: center; align-items: center; max-width: 100%;&#34;&gt;&#xD;&#xA;  &#xD;&#xA;    &#xD;&#xA;    &lt;div style=&#34;flex: 1; min-width: 200px; max-width: 600px;&#34;&gt;&#xD;&#xA;      &lt;img src=&#34;http://localhost:1313/hatich-goose/images/writing/poetry/keris/fallfolio.jpg&#34; alt=&#34;&#34; style=&#34;width: 100%; height: auto; object-fit: cover; display: block;&#34;&gt;&#xD;&#xA;    &lt;/div&gt;&#xD;&#xA;  &#xD;&#xA;&lt;/div&gt;&#xA;&lt;p&gt;&lt;em&gt;“It matters not who you fight for, but what you fight for.”&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;So says the inscription of Lockhaven Walls.&lt;/p&gt;&#xA;&lt;p&gt;Among the Mice Territories, the Guard stands ready to protect: the smallest creatures with the bravest hearts. Lockhaven, their walled home of muroidian proportions, is nestled deep in stone, carved like the walls of Minas Tirith. The mice arm themselves with sword and spear, bow and blade, and fight to protect those who cannot protect themselves from any manner of beast. The weasels, now driven out of the Mice Territories; the wolves that haunt the edge of the Scent Border; snakes that live in underground nests; crabs with vicious appetites. Truly, for a mouse, all things are dangerous.&lt;/p&gt;</description>
+			</item>
 			<item>
 				<title>Project Hail Mary and A Knight of the Seven Kingdoms</title>
 				<link>http://localhost:1313/hatich-goose/posts/pmhxgot/</link>

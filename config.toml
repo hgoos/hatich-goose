@@ -56,7 +56,7 @@ linkedin = "https://linkedin.com/in/helena-goos-29a3232b4"
 
 [[menu.main]]
   name = "Comics"
-  url = "/"
+  url = "/comics"
   weight = 4
 
 [[menu.main]]

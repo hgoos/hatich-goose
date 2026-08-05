@@ -3,7 +3,7 @@ date = '2025-09-03T10:12:59-07:00'
 draft = false
 title = "Cruelty and Kindness"
 tags = ["art", "comics" ]
-featured_image = 'images/heroim/ComicsFont.png'
+featured_image = 'images/heroim/ComicsFont2.png'
 +++
 **Notes:** Find the script <a href="/hatich-goose/comics/comics-scrpt/ck-scrpt/">here.</a><br><br><br>
 ![She's ready to put on a show!](/hatich-goose/images/comics/ck/CK1.png)

@@ -87,7 +87,7 @@ In icy depths of blue and white
 Above the Poet and Bear Queen weep,
 For the wint’ry sorrow that took her life.
 
-<em>lice, Alice, Alice, 
+<em>Alice, Alice, Alice, 
 Come back to golden warmth,
 O’ Alice, Alice, Alice,
 Come back unto our arms.</em>
