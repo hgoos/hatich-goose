@@ -3,13 +3,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/hatich-goose/posts/msgrd/</loc>
-    <lastmod>2026-08-05T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/hatich-goose/tags/american-sentences/</loc>
+    <lastmod>2026-08-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/hatich-goose/posts/</loc>
-    <lastmod>2026-08-05T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/hatich-goose/writing/poetry/</loc>
+    <lastmod>2026-08-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/hatich-goose/writing/poetry/amsent/stateounion/</loc>
+    <lastmod>2026-08-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/hatich-goose/tags/</loc>
+    <lastmod>2026-08-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/hatich-goose/</loc>
+    <lastmod>2026-08-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/hatich-goose/writing/</loc>
+    <lastmod>2026-08-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/hatich-goose/posts/2men/</loc>
+    <lastmod>2026-08-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/hatich-goose/posts/</loc>
+    <lastmod>2026-08-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/hatich-goose/posts/msgrd/</loc>
     <lastmod>2026-08-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/hatich-goose/posts/pmhxgot/</loc>
@@ -24,22 +42,13 @@
     <loc>http://localhost:1313/hatich-goose/posts/definitions/</loc>
     <lastmod>2026-07-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/hatich-goose/writing/poetry/</loc>
-    <lastmod>2026-03-27T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/hatich-goose/tags/sonnets/</loc>
     <lastmod>2026-03-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/hatich-goose/writing/poetry/sonnets/ember/stcksnstones/</loc>
     <lastmod>2026-03-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/hatich-goose/tags/</loc>
-    <lastmod>2026-03-27T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/hatich-goose/tags/this-fluttering-ember/</loc>
-    <lastmod>2026-03-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/hatich-goose/writing/</loc>
     <lastmod>2026-03-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/hatich-goose/writing/poetry/sonnets/ember/amrcnbody/</loc>
@@ -70,9 +79,6 @@
     <lastmod>2025-09-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/hatich-goose/writing/poetry/amsent/childhood/</loc>
-    <lastmod>2025-09-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/hatich-goose/tags/american-sentences/</loc>
     <lastmod>2025-09-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/hatich-goose/writing/poetry/amsent/hangook/</loc>

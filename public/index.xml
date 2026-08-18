@@ -10,9 +10,16 @@
 		
 		
 		
-			<lastBuildDate>Thu, 13 Aug 2026 00:00:00 +0000</lastBuildDate>
+			<lastBuildDate>Tue, 18 Aug 2026 00:00:00 +0000</lastBuildDate>
 		
 			<atom:link href="http://localhost:1313/hatich-goose/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>State of the Union 2026</title>
+				<link>http://localhost:1313/hatich-goose/writing/poetry/amsent/stateounion/</link>
+				<pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/hatich-goose/writing/poetry/amsent/stateounion/</guid>
+				<description>&lt;p&gt;&lt;strong&gt;American Woman / 미국 여자&lt;/strong&gt;&lt;br&gt;&#xA;&lt;em&gt;March 16th, 2026&lt;/em&gt;&lt;br&gt;&#xA;I am still waiting to become a beautiful woman all grown up.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;strong&gt;Material Girl&lt;/strong&gt;&lt;br&gt;&#xA;&lt;em&gt;March 24th, 2026&lt;/em&gt;&lt;br&gt;&#xA;Americans are a synthetic people made of hopes and dreams.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;strong&gt;Pedagogy of an American&lt;/strong&gt;&lt;br&gt;&#xA;&lt;em&gt;April 7th, 2026&lt;/em&gt;&lt;br&gt;&#xA;&lt;em&gt;For my Uncle Herrick&lt;/em&gt;&lt;br&gt;&#xA;He taught me the difference between &lt;em&gt;Endo-&lt;/em&gt; and &lt;em&gt;eto-&lt;/em&gt; mology.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;strong&gt;Pompeii&lt;/strong&gt;&lt;br&gt;&#xA;&lt;em&gt;April 25th, 2026&lt;/em&gt;&lt;br&gt;&#xA;Astounding acts of kindness—the ash doused mother and child shared no kin.&lt;/p&gt;</description>
+			</item>
 			<item>
 				<title>A Tale of Two Men</title>
 				<link>http://localhost:1313/hatich-goose/posts/2men/</link>

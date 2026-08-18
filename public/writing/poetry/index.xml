@@ -10,9 +10,16 @@
 		
 		
 		
-			<lastBuildDate>Fri, 27 Mar 2026 00:00:00 +0000</lastBuildDate>
+			<lastBuildDate>Tue, 18 Aug 2026 00:00:00 +0000</lastBuildDate>
 		
 			<atom:link href="http://localhost:1313/hatich-goose/writing/poetry/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>State of the Union 2026</title>
+				<link>http://localhost:1313/hatich-goose/writing/poetry/amsent/stateounion/</link>
+				<pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/hatich-goose/writing/poetry/amsent/stateounion/</guid>
+				<description></description>
+			</item>
 			<item>
 				<title>Sticks and Stones</title>
 				<link>http://localhost:1313/hatich-goose/writing/poetry/sonnets/ember/stcksnstones/</link>
