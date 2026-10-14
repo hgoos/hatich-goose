@@ -106,16 +106,22 @@ linkedin = "https://linkedin.com/in/helena-goos-29a3232b4"
   weight = 12
 
 [[menu.main]]
+  name = "Why Does Your Content Sound Like a Bot?"
+  url = "https://www.cryptofilma.com/post/why-does-your-content-sound-like-ai"
+  parent = "Other Work"
+  weight = 13
+  
+[[menu.main]]
   name = "Seattle Arts and Lectures"
   url = "/tags/seattle-arts-and-lectures"
   parent = "Other Work"
-  weight = 13
+  weight = 14
 
 
 [[menu.main]]
   name = "About"
   url = "/about/"
-  weight = 14
+  weight = 15
 
 [caches]
   [caches.images]
